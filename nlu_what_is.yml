@@ -1,0 +1,448 @@
+version: '3.0'
+nlu:
+  - intent: card_arrival
+    examples: |
+      - My new card has not been delivered to my home yet. What is going on?
+      - What is the status of my card's delivery?
+      - What is the expected delivery date for my card?
+      - What is the expected delivery date of my card?
+  - intent: card_linking
+    examples: |
+      - What is the process to link the new card?
+  - intent: exchange_rate
+    examples: |
+      - What is my money worth in other countries?
+      - What is the exchange looking like?
+      - What is the basis of your exchange rates?
+      - What is the current exchange rate?
+      - What is the formula for your exchange rate?
+      - What is an exchange rate?
+      - What is your opinion on the exchange rate?
+      - What is the exchange rate for EUR?
+      - What is the present state of the exchange rate?
+      - What is the foreign exchange rate you will apply?
+      - What is the system for determining the exchange rate?
+      - What is the source of your exchange rates?
+  - intent: card_payment_wrong_exchange_rate
+    examples: |
+      - What is your exchange rate between UK pounds and Russian rubles for my last transaction
+  - intent: extra_charge_on_statement
+    examples: |
+      - What is the $1 transaction on my account?
+      - What is this extra pound charge for?
+      - What is the reason for the extra fee on my statement?
+      - What is the extra €1 on my statement for?
+      - What is the extra fee on my statement?
+      - What is this fee debit on my account?
+      - What is this extra €1 fee about?
+      - I am being charged a pound out of nowhere. What is this?
+      - What is the fee on my statement for?
+      - What is this $1 charge on my account?
+      - There is a 1£ charge that appears as pending on my statement. What is that? I haven't purchased anything for a pound there.
+      - What is the dollar that I have pending on my statement there?
+      - What is this extra fee on my statement.
+      - There is a charge for 1£ on my statement.  I do not think that I bought anything that costed 1£.  What is going on?
+      - What is this random charge of one pound doing on my account?
+      - What is this €1 charge?
+  - intent: pending_cash_withdrawal
+    examples: |
+      - What is a pending cash withdrawal?
+      - What is the reason my cash withdrawal is still pending?
+  - intent: fiat_currency_support
+    examples: |
+  - intent: card_delivery_estimate
+    examples: |
+      - What is the delivery time to the US?
+      - What is your shipping policies for cards?
+      - What is the wait time for delivery to the US?
+      - What is the length of time for one of these items to come to the U.S?
+      - What is the estimated date for delivery to US?
+      - What is the delivery time for US?
+      - What is delivery speed to the United States?
+  - intent: automatic_top_up
+    examples: |
+      - What is the limit on Auto top?
+      - What is the maximum for auto top-up?
+      - What is the maximum times I can auto top-up?
+      - What is the auto top-up limit?
+  - intent: card_not_working
+    examples: |
+  - intent: exchange_via_app
+    examples: |
+  - intent: lost_or_stolen_card
+    examples: |
+      - I have lost my card! What is my next step?
+      - What is the first step that I should take after my card has been stolen?
+  - intent: age_limit
+    examples: |
+      - What is minimum age for an account?
+      - What is needed for my daughter to open an account?
+      - What is the process for setting up and account for my child?
+      - What is the age limit for an account?
+      - What is the appropriate age for my child to be able to open an account?
+      - What is the minimum age required to open an account with your service?
+      - What is the minimum age limit?
+      - What is the age limit?
+      - What is the youngest age for an account?
+      - What is your age limit?
+      - What is the age requirement?
+  - intent: pin_blocked
+    examples: |
+      - What is the process for unlocking the pin?
+      - What is the procedure of unblocking my PIN?
+  - intent: contactless_not_working
+    examples: |
+      - What is the reason when I tried to pay contactless at the bus, it didnt work?
+  - intent: top_up_by_bank_transfer_charge
+    examples: |
+      - What is the fee to top-up my account
+      - What is the charge for receiving a SEPA transfer?
+      - What is the charge to make a transfer
+      - What is the cost of a transfer?
+      - What is the handling fee for transfer?
+  - intent: pending_top_up
+    examples: |
+      - It is still pending, I am still waiting. Your system just shows my top-up as pending. What is happening?
+      - What is the reason my top-up is still pending?
+      - Can you tell me what is wrong ? I top-up with you all the time but this time it just shows my top-up as pending. What is happening?
+      - What is taking so long with my top up?
+      - What is wrong with my top-up?
+      - What is the reason that my top-up is still pending?
+  - intent: cancel_transfer
+    examples: |
+  - intent: top_up_limits
+    examples: |
+      - What is the max amount of top-ups?
+      - What is the maximum I can top up?
+      - What is the greatest number of times that I can top-up?
+      - What is the highest amount of top ups I'm allowed?
+      - What is the highest amount I can top-up?
+      - What is the most that I can top-up to a card?
+      - What is the maximum top up?
+      - What is the top-up limit for my card?
+      - What is my top-up limit?
+      - What is the max top-up?
+      - What is your maximum top up limit per day?
+      - What is the top-up limit?
+      - What is the maximum for top-ups?
+      - What is the most I can top-up?
+      - What is the max I can top up?
+      - What is the top-up limit on my cards?
+      - What is the daily limit on my card?
+  - intent: wrong_amount_of_cash_received
+    examples: |
+      - I withdrew money from an ATM today, and now my account is showing a different amount than what I withdrew. I checked the amount the ATM gave me, and it looks like it gave me the wrong amount of money. What is the best thin for me to do to get this fixed?
+  - intent: card_payment_fee_charged
+    examples: |
+      - I'm going on holiday to France for 6 weeks with my family and the cat, Fluffy.  I just purchased €10,000 from a currency exchange to ensure we don't run short but there appears to be a fee.  What is this for?
+      - I noticed a new fee on my account. I didn't know there were fees for these payments. What is the policy?
+      - What is the extra fee that showed up on my card?
+      - What is this fee for card payment?
+      - What is this extra fee?
+      - What is this extra fee that I got when I used my card to pay?
+      - What is the charge for paying with my card?
+      - What is the fee charged for using my card?
+      - What is this fee showing up in my account for?
+      - What is the extra fee that was added when I used the card?
+  - intent: transfer_not_received_by_recipient
+    examples: |
+      - What is the time frame that it usually takes for a transfer to come through? I have a friend needing it immediately but it has yet to come through.
+      - I am having an issue with an in country transfer I did a few days ago. It has yet to appear in my account. I have checked to be sure that all account information is correct multiple times. What is taking the transfer so long?
+      - What is the length of a transaction completion?
+      - My new landlord is a lier and is trying to rip me off by saying I've not paid my rent when I have paid my rent.  What is going on?  They say the money hasn't got to them but I see it going out of my account.  Can you check that the money went to the right place?
+      - I have checked the account information several times to be sure that it is correct, but the in country transfer I did a few days ago still has not appeared! What is the hold up?
+      - What is the time for a transfer?
+  - intent: supported_cards_and_currencies
+    examples: |
+  - intent: getting_virtual_card
+    examples: |
+      - What is the way to go about getting a virtual card?
+      - What is the best way to get my virtual card?
+      - What is the virtual card and how can i get one?
+  - intent: card_acceptance
+    examples: |
+  - intent: top_up_reverted
+    examples: |
+      - My money has disappeared. I had recently added money in, and saw it was there and went through. Now it's gone. What is happening?
+      - My money is nowhere to be found? I talked up earlier and seen it. Now it has vanished. What is going on?
+      - My thoughts were that you offered crypto top up which does not seem to be working. The money has now been taken from my account. What is the problem here?
+      - What is the status of my top up?
+      - So, I was under the impression that you have an offer for crypto top up. This doesn't seem to be working. Now, the money has just disappeared from my account. What is the deal?
+      - My money has gone missing. I had recently added money in, and saw it was there and went through. Now it's missing. What is happening?
+  - intent: balance_not_updated_after_cheque_or_cash_deposit
+    examples: |
+      - The cheque I sent to you to have deposited a couple days ago has not cleared in my account yet. What is the issue?
+      - What is going on? My balance still hasn't updated and it has been two weeks since I deposited my money!
+      - What is going on with my cash deposit. I'm looking at my account balance and it is not there. It has been almost a week. Someone better get back to me asap.
+  - intent: card_payment_not_recognised
+    examples: |
+      - What is this strange payment in my account?
+      - There are some card payments that I haven't done myself. What is going on with my card and does somebody else have access to my card?
+      - After looking at the app I noticed a couple of payments I know I did not make. Is it possible someone has accessed my card? What is actually going on?
+      - There are a couple payments with my card shown that I'm not responsible for. What is going on? Maybe someone has access to my account.
+      - There are a couple payments with my card displayed in the app which I didn't make. What is happening? Maybe someone has access to my card.
+      - There are a couple payments with my card in the app I see that I didn't create. What is happening? Maybe someone gained access to my account.
+      - What is this card payment, I do not recognize it.
+  - intent: edit_personal_details
+    examples: |
+  - intent: why_verify_identity
+    examples: |
+      - What is the reason for the identity check
+      - What is the function of the identity check
+      - What is the purpose of requiring my identification?
+      - What is the first step I need to make for being able to access my account?
+      - What is with the need to have all my ID information?
+      - What is the purpose for verifying my identity?
+      - What is my identification used for?
+      - What is the identity check for?
+      - What is identity check?
+  - intent: unable_to_verify_identity
+    examples: |
+  - intent: get_physical_card
+    examples: |
+  - intent: visa_or_mastercard
+    examples: |
+  - intent: topping_up_by_card
+    examples: |
+      - My friends would like to add to my account. What is the procedure?
+  - intent: disposable_card_limits
+    examples: |
+      - What is the most amount of disposable cards allowable?
+      - What is the limit on disposable cards?
+      - What is the number of transactions I get with a disposable card?
+      - What is limit of disposable cards  I can make per day?
+      - What is the maximum transactions I can use on a disposable card?
+      - What is the max amount of disposable cards I'm allowed.
+      - What is the maximum number of transactions that I can put on a disposable card?
+      - What is the maximum number of transactions I can do with a disposable card?
+      - What is the maximum transactions for one disposable card?
+      - What is the limits on the number of disposable cards I can have?
+      - What is the number of transactions for one disposable card?
+  - intent: compromised_card
+    examples: |
+  - intent: atm_support
+    examples: |
+      - What is the closest ATM?
+  - intent: direct_debit_payment_not_recognised
+    examples: |
+      - What is this direct debit in my statement?
+  - intent: passcode_forgotten
+    examples: |
+      - What is my password?
+  - intent: declined_cash_withdrawal
+    examples: |
+      - My withdrawals were going smooth until I got declined today. What is going on?
+      - Tried using my ATM card earlier at one of your locations for the first time.  It didn't work.  What is going on?
+  - intent: pending_card_payment
+    examples: |
+      - I have been waiting for my card payment to be moved from pending status for an unusually long time.  What is going on here and do you have an idea of when I can expect it to go through?
+      - What is the longest that a payment will show pending?  There is one showing that has been sitting there a few days.
+      - My card payment has had the status of pending forever. What is the issue? It should have gone through at some point.
+      - My card payment has been stuck on pending. What is the problem? It should have gone through by now.
+      - My card payment has been on pending forever. What is the problem? It should have gone through at some time by now.
+      - What is the cause of the delay in applying my card payment to my account?
+      - It's been a few days since I've tried to pay a seller but the funds aren't going through. What is happening?
+      - What is the meaning of a pending payment?
+      - What is the pending payment on my card about?
+  - intent: lost_or_stolen_phone
+    examples: |
+  - intent: request_refund
+    examples: |
+      - What is the refund policy?
+      - What is the refund procedure?
+      - What is your refund policy for products I have purchased?
+      - What is the refund process?
+      - What is the return policy?
+  - intent: declined_transfer
+    examples: |
+      - I tried to buy something over the Internet yesterday and got a declined error. I tried again today and got the same message. What is the issue?
+      - I'm having issues with my card. You guys keep declining it for some reason. I haven't had any issues up until this point. What is going on? I've tried a handful of times with the same, unfortunate, result!
+      - Hello. My credit keeps being declined, last night and again today, as I try to buy something. What is the status of my card?
+      - I tried to buy something online yesterday and was told declined. I got the same error today after trying again. What is the problem?
+      - I wanted to buy something online yesterday, but I could not because the card got declined on the day of and the following day. What is wrong with the card?
+  - intent: Refund_not_showing_up
+    examples: |
+      - What is taking so long with my refund?
+  - intent: declined_card_payment
+    examples: |
+      - What is the reason my payment was not accepted?
+      - What is going on with it saying my card payment was declined?
+  - intent: pending_transfer
+    examples: |
+      - What is the reason a transfer shows as pending?
+      - What is going on? I have checked over and over and the details of my account are right. Why is my transfer still pending? It's 2018 not 1818. Transfering money to another country can't be that hard.
+      - How long does a transfer to another country normally take? I check over and over again and see that my transfer is still pending. It's 2018, nothing should take this long. I have confirmed my account information, so there is no error. What is the hold up?
+      - What is the reason why the transfer shows as pending?
+      - What is the average pending time for a transaction?
+      - I am having to wait for my transfer to be fully processed. It seems to be taking a very long time in the pending phase. What is the normal turn around time that I can expect to see it completed?
+  - intent: terminate_account
+    examples: |
+  - intent: card_swallowed
+    examples: |
+  - intent: transaction_charged_twice
+    examples: |
+  - intent: verify_source_of_funds
+    examples: |
+      - What is my source of funds?
+      - What is the source of funds for my money?
+      - What is the source of the money in my account?
+  - intent: transfer_timing
+    examples: |
+      - What is the timeframe for a transfer in Europe?
+      - What is the estimated time on an urgent transfer from China?
+      - What is the wait time until money reaches my account?
+      - What is the time period for money to be transferred?
+      - What is the longest a US transfer should take to appear in my account?
+      - What is the estimated wait time on a US transfer into my account?
+      - What is the time frame for european transfers?
+      - What is the estimated wait time for transfers from the US?
+      - What is the length of time for money to reach the account?
+      - What is taking so long on my transfer from the US?
+  - intent: reverted_card_payment?
+    examples: |
+      - What is the reason for my card payment to be reverted?
+      - I tried to buy something online but my funds were transferred back to my account. What is happening?
+      - Around one or two weeks ago I purchased something but there's seems to be an issue. I have already received one of the items, but today the money was placed back into my account. What is happening?
+  - intent: change_pin
+    examples: |
+      - What is the process to change my PIN?
+  - intent: beneficiary_not_allowed
+    examples: |
+      - I got a message that my transfer is not possible.  What is happening?  I need this to go through please.
+      - What is the reason for my beneficiary to be disallowed?
+      - What is the reason I couldn't do a transfer to a beneficiary?
+      - Just received a message that my transfer is not possible??  What is going on.  I have done this before with no issues.
+      - What is preventing me from adding a specific beneficiary?
+      - I've been trying to make a transfer and it hasn't gone through. Now I am receiving an error message.  What is the problem?
+  - intent: transfer_fee_charged
+    examples: |
+      - I didn't know there was a charge for tranferring. What is the charge?
+      - I did a transfer.  What is the extra fee?
+      - What is the reason for the fee charge on my transfer?
+      - I tried to transfer money to a receiver and they didn't get the right amount. What is going on and who do I contact to help me?
+      - What is this fee for transferring money?
+      - What is this extra fee while I was doing a transfer?
+  - intent: receiving_money
+    examples: |
+  - intent: failed_transfer
+    examples: |
+      - What is happening?  I have tried to transfer money 5x already.  Is the system down?  This shouldnt be happening as this is a basic transfer.
+      - I have made 5 attempts to make a very standard survey, yet I can't get it to work. What is the problem? Is there an issue related to your system?
+      - I have tried sending a standard transfer five times and it hasn't gone through. What is the problem?
+      - Hi, I'm trying to purchase a flat and I'm needing the first payment for the mortgage to go through on the flat I'm trying to buy. For some reason I keep getting an error.can you assist in making this transfer? What is going on?
+      - I've been trying to make a transfer and it doesn't seem to be working. (5 times) What is wrong with your system?
+      - I need assistance completing a transfer. I'm trying to purchase a flat and need the money for the initial mortgage payment. I keep getting an error and the transfer is not going through. What is going on here?
+      - Hi, I'm buying my son Bertie a starter home in London.  I'm just trying to send the 5% deposit over to the agent. It's only £200,000 but seems to be throwing an error.  What is going on?  If I wait any longer the house prices might rise, can you look in to it please?
+  - intent: transfer_into_account
+    examples: |
+      - What is the procedure to transfer money to my account?
+      - What is the process for transferring money into my account?
+  - intent: verify_top_up
+    examples: |
+      - What is the verification code for my top up card?
+      - What is the point of verifying a top up?
+      - What is the significance of verifying the top-up?
+      - What is the verification process used for?
+      - What is the top up code for?
+      - What is the verification process for my card?
+  - intent: getting_spare_card
+    examples: |
+      - What is the price for an additional card?
+      - What is the procedure for me to get more cards on my account?
+      - What is the charge for sending out more cards?
+  - intent: top_up_by_cash_or_cheque
+    examples: |
+      - What is not accepted in order for me to top up my account?
+      - What is the procedure for topping up with a cheque?
+      - What is your check-cashing policy?
+  - intent: order_physical_card
+    examples: |
+      - What is the process for getting an actual physical card?
+      - What is the price for a physical card?
+      - What is the cost for physical cards?
+  - intent: virtual_card_not_working
+    examples: |
+      - What is the reason I got rejected for using my disposable virtual card to pay a subscription to the gym?
+  - intent: wrong_exchange_rate_for_cash_withdrawal
+    examples: |
+      - What is wrong with the exchange rate? This should have been a much higher amount of cash for that to apply.
+  - intent: get_disposable_virtual_card
+    examples: |
+      - What is the function of the disposable cards?
+      - What is the process to create a disposable virtual card?
+      - What is the procedure for depositing a virtual card
+      - What is the disposable card for?
+  - intent: top_up_failed
+    examples: |
+      - My top up is giving me problems. What is wrong with it?
+      - I got my card a few days ago but am unable to top up. I'm thinking about closing my account because of this. What is going on?
+      - I attempted to top up my car today, it failed! I just got it a couple of days before and it worked then. What is going on with it?
+      - Why are you keeping my money from me by declining my card? What is going on?
+  - intent: balance_not_updated_after_bank_transfer
+    examples: |
+      - What is the normal time to make an international transfer? I made one a few days ago that still hasn't arrived.
+      - What is the time frame that transfers normally take from a UK account? I just completed a transfer and nothing shows up. I need to know if everything is alright.
+      - What is the amount of time transfers usually take from the UK? I had just completed a transfer and nothing seems to be showing up so I need to be sure things are alright.
+  - intent: cash_withdrawal_not_recognised
+    examples: |
+      - What is this witdrawal
+      - What is this cash withdrawal I don't recognize?
+      - What is this cash withdrawal on my statement?
+      - What is this withdrawal as I do not remember making it.
+      - What is the strange cash withdrawal on my statement?
+  - intent: exchange_charge
+    examples: |
+      - What is the current exchange fee?
+      - What is the charge for exchanging currencies?
+      - What is the fee for accepting money from a foreign country?
+      - What is the cost for currency exchanges?
+      - What is the exchange fee that is charged?
+      - What is the currency exchange fee?
+      - What is your currency exchange fee?
+      - What is the rate for exchange fees?
+      - What is the charge for exchanging currency?
+      - What is the fee for a foreign currency exchange?
+  - intent: top_up_by_card_charge
+    examples: |
+      - What is the charge for using a Top up card in the US?
+      - What is the fee for topping up a US card?
+      - What is the fee if I use a European bank for a top up?
+      - What is the charge for topping up a card?
+      - What is the Top up rate charge for using a card in the US?
+  - intent: activate_my_card
+    examples: |
+      - What is needed to activate my card?
+      - What is the process to activate a card
+      - What is the procedure for activating this card?
+      - What is the most efficient way to activate my new card?
+      - What is the process for activating a new card.
+      - What is the process for activating my new card?
+      - What is the process for activating my card and using it?
+      - What is the proper way to activate a card?
+  - intent: cash_withdrawal_charge
+    examples: |
+      - I made a cash withdrawl and there is a charge.  What is this?
+      - So, I was just charged for my recent ATM withdrawal and any withdrawal prior to this has been free. What is the issue here?
+      - I just saw a charge for a cash withdrawal that I made! ATM withdrawals have always been free in the past, so why is there suddenly a charge? What is it going to cost me now?
+      - I have a strange transaction on my account which appears to pertain to a cash withdrawal I made outside Nandos in Leeds.  What is that for?  Is it fraud?
+      - What is your policy on withdrawing cash from an ATM? There is a fee on my account that wasn't there before I paid for my groceries.
+      - What is the extra fee I was charged when using an ATM?
+      - What is the fee for a cash withdrawal?
+  - intent: card_about_to_expire
+    examples: |
+      - What is the cost and time frame of getting a new card?
+      - What is the procedure for an expired card?
+      - My card expires very soon.  What is the cost and delivery time to get a new one?
+      - What is the process when my card is due to expire?
+      - What is the process to get a new card when your old one expires?
+  - intent: apple_pay_or_google_pay
+    examples: |
+      - Google Pay isn't working. What is wrong?
+  - intent: verify_my_identity
+    examples: |
+      - What is the identity verification process?
+      - What is needed for identity verification?
+      - What is needed for the identity verification?
+      - What is necessary for the identity verification?
+  - intent: country_support
+    examples: |

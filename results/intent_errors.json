@@ -1,0 +1,18 @@
+[
+  {
+    "text": "Where do I find PIN for my card?",
+    "intent": "pin_blocked",
+    "intent_prediction": {
+      "name": "get_physical_card",
+      "confidence": 0.5137194395065308
+    }
+  },
+  {
+    "text": "How do I verify my new card?",
+    "intent": "activate_my_card",
+    "intent_prediction": {
+      "name": "verify_my_identity",
+      "confidence": 0.3491367697715759
+    }
+  }
+]

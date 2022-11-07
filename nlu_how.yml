@@ -1,0 +1,1273 @@
+version: '3.0'
+nlu:
+  - intent: card_arrival
+    examples: |
+      - How do I know if I will get my card, or if it is lost?
+      - How do I know when my new card is going to arrive?
+      - How do I track the card you sent me?
+      - How long does it take for a new card to ship?
+      - How can I check on the status of my new card?
+      - How can I periodically check the delivery of the card you sent?
+      - How long does it take for me to get my new card?
+      - How long should it take for my new card to arrive in them mail? What should I do if I never receive it?
+      - How can I check on the delivery status of my card?
+      - How can I see the progress of delivery of the card that was sent?
+      - How long will it take for me to get my card?
+      - How can I track my card's delivery?
+      - How do I track the card you sent to me?
+      - How long does it take to recieve my new card?
+      - How long until my new card gets here?
+      - How much longer until I get my new card?
+      - How long will it be to get this new card?
+      - I was issued a new card a week ago but still haven't received it. How long will it be until I receive it?
+      - How much longer is it going to take to get my new card?
+  - intent: card_linking
+    examples: |
+      - I was able to find my card. How to I go about putting it into my app?
+      - I found my card. How can I put it into my app?
+      - How do I make my card show up in the app?
+      - How do I add an existing card to the app?
+      - How do I link one of your card that I already have?
+      - How can I make my card show up in the app?
+      - How do I link an existing card?
+      - How do I link a new card in the app?
+      - I want my card I just received to show up in the app. How do I do that?
+      - How do I add my new card?
+      - My card is no longer lost. How do I enter it back into the app?
+      - How do I reactivate a card I thought I lost?
+      - How do I add a new card?
+      - How do i go about linking a new card?
+      - I received my card. How do I link it to the app?
+      - How do I add the card I just received to show up in the app?
+      - How do I add a card on to the app?
+      - How do I get my card on the app?
+      - How do I link my new card?
+      - How can I link the new card?
+      - How do I add my new card to the app?
+      - How do I link a new card to an existing one?
+      - How do I link a new payment card?
+      - How do I link my card in the app.
+      - How do I get my card into the app?
+      - How do I reactivate my card?
+      - How do I link the new card that I just got from you guys?
+      - How can I add a new card?
+      - How do I make my card appear on the app?
+      - How do I link the new card?
+      - How do I add my card to the app once I get it?
+      - How do I activate and link my new card?
+      - How do I see my card in the app?
+  - intent: exchange_rate
+    examples: |
+      - How is the exchange rate doing?
+      - How do I know what exchange rate I will get?
+      - How are exchange rates calculated at this bank?
+      - How's the exchange rate?
+      - How do you determine your exchange rates?
+      - How do the foreign exchange rates work?
+      - How is the exchange rate calculated?
+      - How do you decide what the exchange rates are?
+      - How do you calculate exchange rates?
+      - How do you find the exchange rate?
+      - How are exchange rates determined?
+      - How do you determine exchange rates?
+      - How are your exchange rates calculated?
+      - How is an exchange rate calculated?
+      - How can I find your exchange rates?
+      - How does the exchange rate work?
+      - How are foreign exchange rates determined?
+      - How's the exchange rate looking right now?
+      - How will I know what the exchange rate is?
+      - How do your exchange rates factor in?
+      - How do I know what the exchange rate will be when I make an exchange.
+      - How do you do exchanges?
+      - How do you come up with your exchange rate
+      - How are the exchange rates determined?
+      - How much are the rates of exchange?
+      - How do you decide what your exchange rates are?
+      - How are the exchange rates for transfers calculated?
+      - How do I know how much money I will have when I travel abroad?
+      - How do you do currency exchanges?
+      - How did you guys get your exchange rate?
+      - How is the current exchange rate?
+      - How can I tell what foreign exchange rate I will get?
+      - How does the exchange rate work on this app?
+      - How do you determine the exchange rate?
+  - intent: card_payment_wrong_exchange_rate
+    examples: |
+  - intent: extra_charge_on_statement
+    examples: |
+      - How can I find out about an extra fee on my statement?
+      - How come there is a $1 extra charge on my statement?
+      - How come there is an extra fee on my statement?
+      - How come I was charged a transaction of $1?
+      - How long will the $1 charge show as pending?
+  - intent: pending_cash_withdrawal
+    examples: |
+      - I have the cash already, my account still shows up as pending.  How can my account be still pending?
+      - My account shows up as pending after I received cash from the ATM earlier.  How can this be still pending? I've got the cash already.
+      - How long does it take to verify a cash withdraw?
+      - How long does it take for a cash withdrawal to show?
+      - How long will my cash withdrawal take
+      - How long does it take for a pending cash withdrawal?
+      - How are cash withdrawals pending?
+      - I went to an ATM to get cash, but the app says the withdrawal is still pending. How is that possible when I already have the cash with me?
+      - So earlier I went to an ATM and got cash. But when I checked the app, it states that the withdrawal is pending. How can that be when I have the cash on me?
+      - How long does it take for cash withdrawals to hit my account?
+      - I got cash from an ATM earlier but it shows up as pending in the app. How can this still be pending, I already received the cash?
+      - How long before I can see that my cash withdrawal has taken place?
+      - How do I get my cash withdrawal to show?
+      - How long does it typically take for a pending ATM withdrawal to clear?
+      - How long will it take for my cash withdrawal to stop pending
+      - How long will it take for my cash withdrawal to no longer show as pending?
+      - How long until I see a cash withdrawal?
+      - How long will a cash withdrawal be pending?
+      - How is my ATM deposit not available yet?
+      - I removed cash from an ATM earlier but it shows up as pending in the app. How can this still be pending, I already received the cash?
+      - How long will my ATM withdrawal be pending?
+      - I Withdrew cash from an ATM earlier but it shows up as pending in the app. How can this still be pending, I received the cash already?
+  - intent: fiat_currency_support
+    examples: |
+      - How many different currencies can I hold money in?
+      - How many currencies can I have money in in my account?
+      - How many currencies can I have?
+      - How many different currencies can I have my money in?
+      - How can I solve my issue with holding multiple currencies?
+      - How can I hold and exchange fiat currencies?
+      - How do I go forth on holding money in multiple currencies?
+      - How can I exchange to EUR?
+  - intent: card_delivery_estimate
+    examples: |
+      - How long is the wait for my card?
+      - How long until my card will get here?
+      - How long is the delivery time to the US?
+      - How long will delivery to the US take?
+      - I'm worried my card might be lost in the mail? How long does it usually take to arrive?
+      - How quickly can you get me my card?
+      - How long will this take to get to me?
+      - How long will I have to wait for my new card?
+      - How long is a delivery to the US?
+      - How long does it take for deliver to the US?
+      - How long is delivery to the US?
+      - How long should I wait for the card to arrive?
+      - How long will it take to have my card mailed to me?
+      - How long will it take my card to get here?
+      - How long will it take to deliver to the US?
+      - How long will it take to get to the US?
+      - How soon will I get my card?
+      - How long does it take for the card to come?
+      - How long is the delivery to the US?
+      - How long is US delivery?
+      - How long does it take for cards to be delivered after ordering them?
+      - How soon do cards arrive after I order them?
+      - How will I get my card?
+      - How long does it take to receive my card?
+      - How long until the card arrives?
+      - How long does it take for a card to arrive?
+      - How many days to deliver to a US customer?
+      - How long are deliveries to the US?
+      - How long does it take for something to be delivered to the U.S?
+      - How long does it take for my physical card to be delivered.
+  - intent: automatic_top_up
+    examples: |
+      - How do I access the option to top up?
+      - How low does the balance have to be before the system updates?
+      - How do i set up auto top-up?
+      - How do I start auto top up?
+      - I would like to top up my account automatically. How do I do that?
+      - How can I Use thereto-top option?
+      - How can I add money automatically?
+      - How will I know when I can use the auto top-up feature?
+      - Can I auto-top up?  How do I do it?
+      - How do I get refills to my card when I'm traveling?
+      - How do I auto top-up?
+      - How do I top-up automatically?
+      - How do i access the auto top-up option?
+      - How do I activate auto top-up when traveling?
+      - How many times can I auto top-up?
+      - How can I setup automatic top-up?
+      - How do I top-up while traveling?
+  - intent: card_not_working
+    examples: |
+      - How do I fix a broken card?
+      - How come my card doesn't work anymore?
+      - How do I check security settings on my card?
+      - How do I fix my card if it is broken?
+      - How do I re-order a damaged card?
+      - How do I get my card to work?
+      - How do I check security settings using the app?
+      - How can I get my card to work?
+      - My card stopped working. How do I check if there is a freeze on it?
+      - How can it be that my Card is not functioning anymore?
+  - intent: exchange_via_app
+    examples: |
+      - How can I change to another currency?
+      - How can I change USD to GBP?
+      - How can I exchange AUD for GBP?
+      - I would like to exchange currencies on the app. How do I do this?
+      - How can I change currency type?
+      - How do I change my currency to another?
+      - How do I exchange currencies using the app?
+      - How do I exchange currencies using this app?
+      - How do I change my AUD into GBP?
+      - How can I convert currencies?
+      - How do I change to a different currency?
+      - How to exchange my currency
+      - How do I use the app to exchange currencies?
+      - How do I exchange USD to GBP?
+      - How do I exchange AUD for GBP?
+      - How can I exchange currencies using your app?
+      - How do I go about exchanging currencies with this app?
+      - How do I exchange currencies with this
+      - I'm having difficulties changing AUD for GBP. How do I do this?
+      - How do you exchange currencies
+      - How can I exchange currencies with this app?
+      - How can I exchange GBP for AUD?
+      - How do I switch to a different currency?
+      - How to I switch my money for the money used in another country?
+      - How do I make a currency exchange?
+      - I accidentally chose to exchange GBP, but I need to pick AUD. How can I change it?
+      - How can I exchange USD and GBP in the app?
+      - How can I exchange currencies in the app?
+      - How can I change the currency I'm exchanging from AUD to GBP?
+      - How can I trade currencies with this app?
+      - How do I change to AUD from GBP?
+      - How do I start an exchange between GBP and AUD?
+  - intent: lost_or_stolen_card
+    examples: |
+      - How do I replace a stolen card?
+      - How can I report that my card was stolen? I made a police report first.
+      - My wallet was stolen, along with my cards. How do I put a freeze on my cards and order a new one?
+      - How do I deactivate a stolen card?
+      - I think my wallet fell out on the Tube today! I realized as soon as I got to my desk. How do I cut off the card?
+      - How do I report my card as lost or stolen?
+  - intent: age_limit
+    examples: |
+      - How old do you need to be to use the banks services?
+      - How old do I need to be?
+      - How old does my daughter have to be to open an account?
+      - How old do my kids have to be use this?
+      - How do I open an account for my children?
+      - How old do you have to be to open an account?
+      - How old do you have to be?
+      - How do I set up an account for my children?
+      - How old must I be to open an account?
+      - How old do you need to be to open an account?
+      - I'd like to open an account for my children. How can I do that?
+      - How can I open an account for my children?
+      - How old do kids have to be to open an account?
+      - How old do my kids need to be to use your service?
+      - How old do my kids need to be to open an account?
+      - How many years old do I have to be?
+      - How old can one use your service?
+      - How old do you need to be to have an account?
+      - How old does my daughter need to be to have her own account?
+      - How old does one need to be?
+  - intent: pin_blocked
+    examples: |
+      - I entered a wrong PIN too many times. How can I fix this?
+      - How can I unblock my PIN?
+      - How do I make my PIN work again?
+      - How can I get my PIN unblocked?
+      - How do I take a block off my card?
+      - How do I go about unlocking a pin?
+      - I enetered the wrong information, I need my account unblocked How do I do that?
+      - While I was drunk, I goofed my PIN number and your machine ate my card. How can I get it back?
+      - How can I reset my darned PIN number?
+      - 
+      How do I unblock my PIN?
+      - How do I get unblocked?
+      - How come I got blocked for entering wrong pins?
+      - How many times can I enter a wrong PIN before it is blocked?
+      - How to unblock my PIN?
+      - How many incorrect attempts cause card to be blocked?
+      - How do I unblock my card?
+      - Too many times I entered the incorrect PIN.  How can I get my account unblocked?
+      - How do I unlock my account after typing in the wrong PIN too many times?
+  - intent: contactless_not_working
+    examples: |
+      - How come when I tried to pay contactless at the bus it didnt work?
+      - I'm confused. My contactless is suddenly not working anywhere that I try to use it. How do I fix it?
+      - I've tried using my contactless in several locations today and it's not working anywhere. It seemed fine before. How do I get it to work again?
+      - How do I troubleshoot my contactless?
+      - How can I fix my contactless?
+      - How can i get new card?
+      - My contactless stopped working today no matter where I try to use it. How do I get it to start working again?
+      - How do I troubleshoot when contactless doesn't work?
+      - How can I fix my card if the contactless function didn't work this morning?
+  - intent: top_up_by_bank_transfer_charge
+    examples: |
+      - How much is it to receive money?
+      - How much does a transfer cost?
+      - How much does it cost to top up by transfer?
+      - How much do I need to pay for a transfer?
+      - How much will it be in order to pay with a bank transfer using SEPA?
+      - How much will it cost me for a SEPA transfer?
+      - How much would it cost me if I transfer?
+      - How much does it cost to make transfers?
+      - How much would it cost me for a bank transfer to top up my account?
+      - How much would I be charged for a transfer?
+      - How much does it cost to do a transfer?
+      - How much does each transfer cost?
+  - intent: pending_top_up
+    examples: |
+      - How long does a top-up take to go through?
+      - How long will it take for my money to be deposited?
+      - How long will my top-up stay pending?
+      - How long should I wait for top up go go through ?
+      - How long does it take for my top up to clear?
+      - How long will my top-up be pending?
+      - How long after a failed topup will funds refurn to account
+      - How long does it take for a top-up?
+      - How long does it take for a top up to go through
+      - My top up keeps showing pending?  How long will things be like this?  Days, weeks, months?  I need the money quite urgently for an important coffee purchase, can you please let me know when top up will work?
+      - How long do top-ups take to go through
+      - How long is a top up supposed to be pending, because an hour is too long! Can you fix this to go through?
+      - How come my top-up didn't go through instantly, like it usually does?
+      - How long do I need to wait til my top up isn't pending?
+      - How long does it take for a top up to be approved?
+      - How do I make my top up complete?
+      - How long does my top up pending last?
+      - How long should it take for my top-up to finish? I've been waiting a while.
+      - How do I know if my top-up went through?
+      - How long will it take for my top up to work? It's still pending
+      - I've been waiting for over an hour for a top up to go through.  How long is this supposed to take?  I really need this money.
+  - intent: cancel_transfer
+    examples: |
+      - I made a mistake this morning when I did a transfer. How do I reverse it?
+      - How do I revert a transaction?
+      - How do i cancel a charge?
+      - How do I cancel a transaction?
+      - How fast can you fix an error in payment?  I made a payment in the wrong account yesterday and it needs to be adjusted by tomorrow for my rent.
+      - How to cancel a transaction
+      - How do I cancel a transfer?
+      - How can I cancel my transfer?
+      - How can I cancel a transfer I made
+      - How do I fix a transaction to the wrong account?
+      - How do I go about cancelling a transaction?
+      - I have arranged a transfer, but no longer need to send it. How do I stop the transfer?
+      - How can I revert a transaction from this morning?
+      - How do I cancel a recent transfer?
+      - I made the incorrect payment for my rent yesterday and this needs to be fixed by no later than tomorrow. How can you help?
+      - How can I cancel a transaction to a wrong account?
+      - How can I cancel this transaction?
+      - I wanted to transfer money to another account, but now I don't have to so I'd like to cancel said transfer. How can I do that?
+  - intent: top_up_limits
+    examples: |
+      - How many top-ups am I allowed to do?
+      - How much is ok for me to top up with?
+      - How much am I allowed to top-up?
+      - How much can I top up in a day?
+      - How often can I top up?
+      - How many times can I make a top-up?
+      - How can I information on my limit for top-ups?
+      - How much could I top up?
+      - How many top-ups can be approved?
+      - How many top-ups can I use?
+      - How often am I able to top-up?
+      - How often can I top up my account?
+      - How much is the limit for top-ups?
+      - How much can I top up on my card?
+  - intent: wrong_amount_of_cash_received
+    examples: |
+      - How can I request cash back? The ATM just gave me the wrong amount that I've been charged though...
+      - I'm at the ATM right now and it only allowed me to withdraw 10 pounds instead of my requested 30. What's going on? How can I fix this?
+      - How can I request cash back? The ATM gave me the wrong amount that I've been charged though...
+      - I was just giving the wrong amount by the ATM. How do I request cash back at this point? The app is showing the amount that I actually requested even though that's not what I got.
+      - I took out cash from the ATM, but something must have went wrong, My account shows the correct amount of cash I took out, but the ATM didn't give me that amount. How do I get my money back?
+      - I am so angry right now!  I went to the ATM and did not get the correct amount of money I chose to withdraw.  How could this happen?  I need my money and want to know how I can get it ASAP!
+      - How can I request cash back? The ATM just gave me a different amount than what I've been charged though...
+      - I selected to withdrawal 30 pounds but only received 10. I'm still standing in front of the ATM. The app shows i took out 30 pounds also. How do i fix this?
+      - How can we correct a mistake on an ATM transaction?  The app shows what I should have gotten.
+      - How can I get cash back? The ATM just gave me the wrong amount that I've been actually charged though...
+      - How can I fix this? The ATM gave me more cash than I'd asked for.
+      - How can I get my money that I didn't get from the ATM?
+      - How can I request cash back? The ATM just gave me a different amount than what I've been actually charged though...
+      - So I just went to the ATM to get some cash.  I input that I needed 100 pounds but I only got 80.  I have the receipt  and I am in need of the extra money.  How do I go about obtaining the missing amount?
+  - intent: card_payment_fee_charged
+    examples: |
+      - How did the extra charge on my card come in effect?
+      - How come I was charged an extra fee when paying with the card?
+      - How was I charged extra when I used my card to pay?
+      - How do I see what fees I am supposed to be charged on my account? I've noticed fees on some transactions, but not on others. This is very confusing and I cannot find a pattern to what I am being charged?
+      - How can I check how much free spending I have left? I have some big purchases coming up and want to know where I can look for any info.
+      - How can I tell if there will be a fee added to my payment or not?
+      - How do I know which payments I make will have additional fees? Where can I find this information online?
+  - intent: transfer_not_received_by_recipient
+    examples: |
+      - How long does it typically take a transfer to go through?  I sent some money to a friend earlier today, and she really needs it.  It still is a pending transfer, even though I sent it a few hours ago.
+      - How much time do transfers typically take? I sent money to a friend who needs it urgently. It's been hours and has not gone through.
+      - How long will it take for my transfer to arrive?
+      - How long does it take for transfers to process?  I sent funds to a friend, and she says that she has not yet received anything.
+      - How long do transfers typically take? Is there a way of speeding the process up? My friend needs the money I sent her desperately.
+      - How long does it take for money to transfer?  I sent some to a friend and it hasn't gone through yet.
+      - How much time do transfers take? I sent money to a friend who needs it fast. It's been hours, and the money has not gone through.
+      - How long should a transfer normally take to process completely? I have a friend that needs it right away, but it's already been 2 hours and she hasn't received it.
+      - I need to transfer some money to a friend who is in urgent need of some fast cash. How long will it take before she can use that money?
+      - How long do I have  to wait for my transaction to be completed?
+      - How long does it take for the transfer to go through?
+      - How long do money transfers take? My friend really needs the money i sent a couple of hours ago but it's not there yet.
+      - How come my money hasn't shown up yet?
+      - How long will my transaction take?
+      - How long should it take for a transfer to go through? I have been waiting a while.
+      - How long will it take to receive my money from my transfer transaction?
+      - How long does it take for transfers to be approved?  I sent funds to my girlfriend, and she says that she has not seen any approved funds in her account.
+      - How long will it be  before the person I sent money to is able to see it?
+      - I transferred some money to a friend of mine who urgently needs some money right now. How long will it take to get to her?
+      - How long will my most recent transfer take to go through? The recipient needs the money urgently.
+      - How long will a transaction to a friend take?
+      - How can I the person see my money transaction?
+      - I sent a transfer to a friend that needs it urgently. It has already been 2 hours and still hasn't come through to her. How long does it normally take?
+      - How long do transfers take? I sent money to a friend who needs it urgently. It's been hours and has not gone through.
+  - intent: supported_cards_and_currencies
+    examples: |
+      - How do I use American express to top up my account?
+      - How can I top up my card with another card?
+      - How can I fund another account with my American Express?
+      - How can I top up my account and which currency can I use?
+      - How can I get funds into my account from my American Express?
+      - I want to use a payment card to top up my account. How can I do this?
+      - How can I pay for top-ups?
+      - How can I use my American Express to add money into my account?
+  - intent: getting_virtual_card
+    examples: |
+      - How can I sign up for a virtual card?
+      - How do I get to the virtual cards?
+      - How to receive virtual card?
+      - How to order a virtual card
+      - How do I go about getting hold of a virtual card?
+      - How can I go about ordering a virtual card?
+      - How can I obtain a virtual card?
+      - I'm interested in getting a virtual card.  How do I get one?
+      - How can I receive a virtual card?
+      - How do I get my virtual card?
+      - How come I did not get a virtual card yet?
+      - How do I get a virtual card on my device?
+      - How do I access the virtual card?
+      - How long will it take to receive a virtual card?
+      - How come I didn't get a virtual card yet?
+      - How do I go about getting a virtual card?
+      - How can I locate the virtual card?
+      - How long do you have to wait to see your virtual card your ordered?
+      - How to access my virtual card
+      - I have lost my card, but need to place an online order! How do I get a virtual card instantly?
+      - How do I receive a virtual card?
+      - I heard you have virtual cards. How do I get one?
+  - intent: card_acceptance
+    examples: |
+      - How do I know where I can use my card?
+      - How can I know where my card will be accepted?
+  - intent: top_up_reverted
+    examples: |
+      - How come I can't put money in my top up account?
+      - How does my top-up got cancelled?
+      - I thought you offer crypto top up but it doesn't seem to be right ? Money just disappeared from my account, How it would work ?
+      - How can I tell if my top-up has been cancelled?
+      - How do I tell if my top up was reverted?
+  - intent: balance_not_updated_after_cheque_or_cash_deposit
+    examples: |
+      - How do I see my updated balance after I make a cheque or cash deposit?
+      - How long does it take for a cheque to post to your account?
+      - How long should a cheque deposit take to show? My account hasn't updated and I want to make sure everything is okay.
+      - How long does it take to show a deposit I made to my balance?
+      - How long do cheques take to post to your account?
+      - How long will it take for the cash I deposited this morning to show up?
+      - How long do deposits take to appear? I've been waiting for more than a week and need the money!
+      - How long does a check take to show up in the account balance?
+  - intent: card_payment_not_recognised
+    examples: |
+      - There are charges on my card from the past few day I am pretty sure I didnt make, can you please freeze it for me? How do I get my money returned since it wasnt me?
+      - How do I find out how or where this transaction on my account came from?
+  - intent: edit_personal_details
+    examples: |
+      - How can I change my address?
+      - How do I edit the personal details on my account?
+      - How can I change my name because I just got married?
+      - I just moved. How do I give you my new address?
+      - How can I change my name in my profile?
+      - How do I go about changing my address?
+      - How do I change my account details?
+      - How do I change the details in my account?
+      - How do I edit my details?
+      - How would I change my details?
+      - How can I change my information?
+      - How do I change my details?
+      - How to edit personal details?
+      - How can I edit my personal details in the app?
+      - How do I change my address ?
+      - How to modify my details.
+      - I moved so I need to change my address. How do I do that?
+      - How do I change my name after marriage
+      - How do I update my address?
+      - How do I modify my details?
+      - How do I input a new address?
+      - How would I be able to make changes to my personal details?
+      - How do I edit my personal details?
+      - How can I update my personal information after moving?
+      - How can I change to my married name?
+      - How do I modify my account details?
+      - How do I change my name?
+      - How can I change my account details?
+      - How do I change my last name?
+      - How can I update my details since I moved?
+  - intent: why_verify_identity
+    examples: |
+      - How does identity check work?
+      - How to verify my identity
+  - intent: unable_to_verify_identity
+    examples: |
+      - How long does it take to prove my identity?
+      - How long does it take for my id to verify?
+      - How long will it take to verify my account?
+      - How come I can't seem to verify my id?
+      - How long does it take to verify a person's identity?
+  - intent: get_physical_card
+    examples: |
+      - my pin hasn't arrived in the post! How do I cancel it or get a new one?
+      - How will I know my pin number?
+      - How do I find my PIN?
+      - How will I receive my PIN?
+      - How do I find my PIN number?
+      - How do I set up my card PIN?
+      - How do I request the PIN?
+      - How is the PIN delivered?
+      - How do I set my physical card PIN?
+      - How do I locate my PIN now that I have my card?
+      - How do I find the PIN?
+      - How do I know what my PIN is?
+      - How long does it take for me to get my pin
+      - How long do I wait for my PIN
+      - How do I get my card PIN?
+      - How do I get a PIN?
+      - How is my PIN sent?
+      - How do I get started when I get my card?
+      - How do I find my new pin?
+  - intent: visa_or_mastercard
+    examples: |
+      - How can I choose between Visa and Mastercard?
+      - How can I get a Visa and Mastercard?
+      - How do I get selected for a visa card?
+      - How can get a Visa card?
+  - intent: topping_up_by_card
+    examples: |
+      - How can my friends top up my account?
+      - How do I to up by card?
+      - How do I add money to my card?
+      - How can I transfer money using my credit card?
+      - How do I transfer funds directly from my credit card?
+      - How do I top up on my card?
+      - How do I use a card to top up?
+      - How do I top up by card?
+      - How do i set up my credit card to send transfers?
+      - Something is wrong with my top up and I can't see it. How do I find it?
+      - How do I top up using my card?
+      - How do I go about transferring money using my credit card?
+      - How does someone else top up my account
+      - I have a new card. How do i top it up?
+      - How can I use my credit card to transfer money?
+      - How do I use my card to top up?
+  - intent: disposable_card_limits
+    examples: |
+      - How many times can I use a virtual card?
+      - How many disposable cards am I allowed to have?
+      - Can I get a disposable card?  How many can I have?  How often can I use them?
+      - How limited is a virtual card?
+      - How many disposable virtual cards can you have?
+      - How can many disposable cards can I have per day?
+      - How many times can I use my disposable card?
+      - How many purchases can I make with one disposable card?
+      - How many transactions can I do with my disposable card?
+      - How many disposable cards per person?
+      - How many transactions can I make on my disposable card?
+      - How many active transactions can I make with a disposable card?
+      - How many disposable cards can you own?
+      - How many transactions can I do with a disposable card?
+      - How many payments can I make using a virtual card?
+      - How many disposable cards can I have at one time?
+      - How many transactions can be made with a disposable card?
+      - How many disposable cards can I make in a day?
+      - How much transactions do I get with a disposable card?
+      - How many disposable  cards are available per account?
+  - intent: compromised_card
+    examples: |
+      - How do I stop fraud to my account?
+      - How do I stop fraud to my card?
+      - How can I tell if someone else is using my card?
+      - How do I report fraud on my card?
+      - How do I report possible fraudulent activity on my account?
+      - How do I order a replacement for stolen card?
+  - intent: atm_support
+    examples: |
+      - How do I withdraw money?
+      - How can I find an ATM that accepts this card?
+      - How many ATMs will take this card?
+      - How far is the closest ATM from me?
+      - How can I tell if an AMT will take this card?
+      - How do I know it is a Mastercard ATM?
+  - intent: direct_debit_payment_not_recognised
+    examples: |
+      - This debit is not my transcation. How do I get my money out back?
+      - How can I get my money back for a payment i didnt make
+      - There is a direct debit transaction on my statement that I think is not mine. How do I remove?
+      - How can I dispute a direct debit transaction?
+      - How can I dispute a debit transaction?
+      - I see a direct debit that isn't mine? How can I get my money back?
+      - How do I dispute a direct debit on my account?
+      - How do I dispute a debit that I didn't make?
+      - How long after I receive my statement can I dispute payments on it?
+      - How do I dispute a direct debit transaction?
+      - How do I dispute a direct debit that I didn't do?
+      - How can I dispute a direct debit charge on my account?
+      - How do I get a refund for an unauthorized direct debit payment?
+  - intent: passcode_forgotten
+    examples: |
+      - How do I reset my passcode?
+      - How can I reset the passcode if I need to do that?
+      - How do I change my passcode?
+      - How can I go about resetting my passcode?
+      - How can I change my password?
+      - How do I reset my password?
+      - How can I reset my passcode?
+      - How do I get the passcode reset?
+      - How can i reset my passcode ?
+  - intent: declined_cash_withdrawal
+    examples: |
+      - How come I can't get money at the ATM
+      - How do I get money from an ATM using my card? I can't seem to get it to work? I used the pin I had, but maybe it's wrong? What do I need to do to fix this?
+      - I tried to withdraw some funds from my card, but was declined. How can I get my money?
+      - How come the ATM won't give me my money?
+  - intent: pending_card_payment
+    examples: |
+      - How long does it actually take for a card payment to go through? There's one stuck since a couple days already that doesn't seem to move
+      - How long does a payment usually show as pending? Is it normal that mine is still pending?
+      - I made a payment with my card and it hasn't changed. How long do you think this will take?
+      - How long will it take for my payment to go through?
+      - How come my card payment is still pending?
+      - How is my card payment still pending?
+      - I've made a card payment a couple of days ago now but it looks like the money is stuck. How long does it typically take for the payment to go through?
+      - How long does a payment show as pending before i should worry about it?
+      - I made a payment a while ago and it is still showing as "pending" in the account. How long will this payment take to complete?
+      - One of my card payments looks like it's stuck but I have made the payment days ago. How long until the payment will be applied to my account?
+      - How long does it actually take my card payment to make it to the account? I've made a payment a couple of days ago but it hasn't moved since.
+      - How long does it take for my payment to process?
+      - How long does it take for a new purchase to stop being considered pending?
+      - How long does it actually take for a card payment to go through? There's one stuck since a couple of days already that doesn't seem to move
+      - How many days does a regular transaction take to complete?  I see a pending payment that hasn't changed in the last several days.
+      - How long does it take for a payment to change from pending?
+      - How long does it take for a purchase to go from pending to authorised?
+      - How long will my payment be pending?
+  - intent: lost_or_stolen_phone
+    examples: |
+      - My phone is at the hotel.  How can I use the app?
+      - My phone has been stolen.  How can I make sure no one uses my account from it?
+      - How do I protect my phone from someone using it after I lost it.
+      - How can I access my account when I have lost my phone?
+      - How do I use my card if I lost my phone?
+      - How can I stop someone from using my card after I lost it yesterday.
+  - intent: request_refund
+    examples: |
+      - How long does it take to get a refund on something I bought?
+      - Hello. How do i go about getting a refund of an item i bought ? I want to cancel the payment since i have not received the item yet.
+      - I've changed my mind on an item.  How do I get a refund?
+      - I decided I no long want something that I ordered, and want a refund. How do I go about doing that?
+      - How do I get a refund for something I bought?
+      - How can I get a refund for an item I purchased but has not yet arrived?
+      - I didn't enjoy my tutor session and want a refund back. How do I go about doing this?
+      - How do I get my money back for something I bought?
+      - How do I reverse a transaction on my account?
+      - How do I begin the process of a refund?
+      - I did not get the item I ordered.  How should I go about this?  Should I just cancel my order or my payment?  Please help me.
+      - I want a refund, but I haven't received the item yet. Can I cancel it and get my funds back? How do I do that.
+      - How do I go about getting a refund?
+      - How can i get a refund for something i just bought?
+      - How do I request a refund?
+      - How do I get my refund back?
+      - How can I get a refund for a purchase?
+      - How do I get a refund for an item I bought?
+      - How can I get my money back on an order. I haven't gotten the item yet, so I want to cancel the order. How?
+      - I am unhappy with an item I bought. How do I get a refund?
+      - How can I go about getting a refund?
+      - How do I cancel a purchase?
+      - How do I return something for a full refund?
+      - How does on apply fora refund on an item he ordered? I ordere an item and have not received it yet so i want to cancel it and get a refund
+      - How do I receive a refund for my item?
+  - intent: declined_transfer
+    examples: |
+      - How do I make my transfer go through
+      - How do I make sure my transfer isn't goin to an unsupported merchant?
+      - How can I check for an unsupported merchant for my transfer request?
+      - How come my transfer got declined
+      - How do I contact customer support about my declined transfer?
+      - Help me. My transfer was declined. How could this happen?
+      - How can I find a way to transfer money without it being rejected?
+  - intent: Refund_not_showing_up
+    examples: |
+      - How come my refund hasn't appeared on my statement?
+      - How can I check if I have received a refund if it is not yet on my statement?
+      - How can I investigate a missing refund?
+      - Hello. I bought an item a while ago, and have since requested a refund.  However, upon checking my online statements, it seems that I haven't been issued a refund yet.  How can this be remedied?
+      - How will I know when I get my refund?
+      - How long will it take to refund me
+      - How do I find the refund on my statement?
+      - How long does it take for a refund to appear?
+  - intent: declined_card_payment
+    examples: |
+      - How do I check to see why my card payment was declined?
+      - How can a payment be declined
+      - How come my card payment has been declined?
+  - intent: pending_transfer
+    examples: |
+      - How long do transfers take, mine just says pending?
+      - How long does it take for a transfer to finish pending?
+      - How long does it take for a money transfer to show up?
+      - I sent a transfer and it has been pending for awhile. How long will it stay pending?
+      - How long do I have to wait for the transfer to be finalized?
+      - How long will my transfer be pending for?
+      - How long is a transfer in the pending status?
+      - How long do EU transfers actually take? I recently bought something online a few days ago, sent the money immediately online but the seller says it's still not there yet.
+      - I sent payment with EU transfer and they still haven't received it. How long does it take?
+      - How long is the wait for a money transfer to show up?
+      - How long until transfers complete?
+      - How long do you expect me to wait for the transfer? It finally worked out, but has been pending for a long time and it's quite urgent.
+      - I bought something online a couple days ago, sent the money immediately online but the seller says it's still not there yet. How long do EU transfers actually take?
+      - How long does a transfer to another country normally take? I check over and over again and see that my transfer is still pending. It's 2018, nothing should take this long. I have confirmed my account information, so there is no error. What is the hold up?
+      - How long is the wait for a money transfer to post?
+      - How long will my transfer stay pending?
+      - How long will the transfer take?
+      - How long does it take for pending to go through
+      - How come I have pending transfers?
+      - I recently purchased something and the seller says my money has not arrived yet. It was in EU's. How long does this take?
+      - How long do EU transfers actually take? I bought something online a couple days ago, sent the money immediately online but the seller says it's still not there yet.
+      - How long do EU transfers take? I bought something online a couple days ago , sent the money immediately online but the seller says it is still not there yet
+      - My transfer is stuck pending? How do we fix it to it goes through?
+      - How long does a transfer take?
+      - How long would does it take for a seller to receive an EU transfer if I bought something from them and sent them the money immediately?
+      - How long does it take for pending transfer transactions to post?
+      - How long will my transfer be pending?
+      - How long will a transfer be pending for?
+      - How long do EU transfers take? I bought something online a couple of days ago , sent the money immediately online but the seller says it is still not there yet.
+      - How long do I wait for a transfer to take?
+      - Hello. How long does it usually take to transfer money to another country? I've made sure all the information is correct, but the transfer still says that it's "pending."
+      - How long does EU transfer take? I bought something online a couple days ago , sent the money immediately online but the seller says it is still not there yet
+      - How much longer do I have to wait until my transaction is complete? I transferred money to another country many hours ago and the transaction is still pending.
+      - The seller of the items I bought online the other day hasn't received the EU transfer yet. How long do these usually take?
+      - I have a transfer that was approved that I'm urgently waiting for. How long am I supposed to wait for it?
+      - How long does the "pending" period of a transfer take?
+  - intent: terminate_account
+    examples: |
+      - How do I deactivate my account?
+      - How do I discontinue my account?
+      - How do I shut down my account and get out of this company?
+      - How do I close my account?
+      - How do I delete my account now
+      - How can I close my account, I don't want it.
+      - How do I delete my account? I am dissatisfied with the service.
+      - I want to delete my account. How do I do this?
+      - How can I delete my account?
+      - How do I terminate my account.
+      - How to I close my account?
+      - How can I close my account?
+      - How do I close my account, since I'm dissatisfied?
+      - How do I delete an account?
+  - intent: card_swallowed
+    examples: |
+      - Your machine took my card. How do I get it back?
+      - The ATM at Metro bank on High St. Kensington didn't return my card, and the bank is now closed. How do I get back a card swallowed by an ATM?
+      - How can I get my card out of the stupid ATM that ate it?
+      - How do I get my card back quickly from a bank machine that it?
+      - How do I get my card out of the ATM?
+      - How do I get a new card as your machine swallowed mine!
+      - How can I get my card out of the ATM?
+      - How do I get my card back after the ATM swallowed it.
+  - intent: transaction_charged_twice
+    examples: |
+      - How can I fix this?  There is a double charge on my account.
+      - How do I query a payment on my card? It looks like I have paid for the same thing twice.
+      - How do I get my money back for a duplicated charge?
+      - I got charged twice with a duplicate card. How do I resolve this?
+      - My account shows I have been charged twice for the same meal. How do I get the second payment voided and returned to me? I do not eat out much and my family is living paycheck to paycheck,  mostly. I cannot afford to spend more money than necessary, as is, so I must see to it that the cost be promptly credited back onto my card.
+      - How come there is a duplicate charge on my card?
+      - In reviewing my statement, I show I have two charges for the same purchase at the same time, which I have not made in duplicate? How do I get this solved?
+      - How do a reverse a duplicated charge?
+  - intent: verify_source_of_funds
+    examples: |
+      - How will I know where my funds are coming from?
+      - How can I tell where the money came from?
+      - How can I look at where my available cash is coming from?
+      - How do I verify my source of funds?
+      - How do I verify the source of my funds?
+      - How can I lookup the source for my available money?
+      - How do I find out where my funds came from?
+      - How do I know where my money comes from?
+      - How can I find the source for my available funds and money?
+      - How do I know where my funds come from?
+      - How can I prove the source of my funds?
+      - How can I know where did my funds come from?
+      - How can I receive verification for the source of my funds?
+      - How can I tell the source for my available funds?
+      - How do I see my source of funds?
+      - How can I find out the source of my available cash?
+      - How do I find out my source of funds?
+      - How do I know where the funds come from?
+      - How can I find out where the funds are flow?
+      - How can I check to see where my funds come from?
+      - How can I verify my source of funds?
+      - How do I see the source of my money?
+  - intent: transfer_timing
+    examples: |
+      - How long am I to wait before the transfer gets to my account?
+      - How long does it take to get my money
+      - How long will this transfer from europe take?
+      - How long should I have to wait before I see the transfer in my account?
+      - How long does a European transfer take?
+      - How many days do I have to wait for the transfer to reach my account?
+      - I am waiting for the money to enter my account. How long does it take?
+      - How long will an urgent transfer from China take?
+      - How long do transfers from Europe take?
+      - I have to quickly transfer something to China. How long will it take to arrive there?
+      - How long will I have to wait for my money to be in my account?
+      - How long does a transfer take to reach one's account.
+      - How long will a transfer from Europe take?
+      - How long will a transfer from the US take?
+      - How long do I wait for a transfer from the United States?
+      - How long do I have to wait for a US transfer?
+      - How fast can I transfer something from China?
+      - I urgently need to transfer something from China. How long can I expect it to take?
+      - How many days does it take for a transfer to go through?
+      - How long until the transfer is reflected on my account balance?
+      - How long do I have to wait for Europe transfers?
+      - How long does a transfer from the US take?
+      - How long is the transfer?
+      - Can I quickly send a transfer from China?  How long will it take?
+      - How long does it take for a transfer to show up in my account?
+      - How long does it take in Europe to do a transfer?
+      - How long does it take to transfer from china? Is there a way to transfer it quickly, I need it urgently?
+      - I need to transfer something to China. It is urgent. How many days will it take to get there?
+      - I need a quick transfer from China.  How long would that take?
+      - How long until transfers from Europe go through?
+      - I have a transfer from the US, How long is the wait?
+      - How do i transfer something faster than normal?
+      - I need to transfer something from China, How long will it take?
+      - How long do European transfers take?
+      - How long does it take for a transfer to be in my account?
+      - How quickly can I transfer something to China?
+      - How long will it take the money to appear in my account?
+      - How fast are transfers from Europe?
+      - I need to urgently transfer something from China. How long will it approximately take?
+      - How long will it take for the money to reach my account?
+      - I transferred money from the US, How long does it take?
+      - How long will a transfer take from Europe?
+      - How long will it take to transfer something to China urgently?
+      - How long does it take transfers from Europe to complete?
+      - I must make a transfer from China and it is urgent. How long before the transfer is complete?
+      - There is an urgent transfer I need to make from China.  How long will it take to get it processed?
+      - How long will a transfer from China take? I need to transfer something from there.
+      - Its been 3 days, How long will my transfer take to get to my wallet?
+      - How many days until my US transfer arrives?
+      - How long will it take to transfer something from China?
+      - How long will it take to transfer from europe?
+      - How long will it take to urgently transfer something to China?
+      - Can I transfer something urgently from China? How long does it take?
+      - How long does it take to get money from Europe?
+      - How long does it take for the money to show up in my account?
+      - How long does it take for a transfer to reach my account?
+      - How long does transfer from the US take?
+      - How long does a transfer transaction take?
+      - How long does it take to make an urgent transfer from China?
+      - Money transfer help? How long?
+  - intent: reverted_card_payment?
+    examples: |
+      - How come the money from the merchant appeared back into my account?
+      - How do I fix a payment that was reverted
+      - How come I can't find my payment?
+      - How can I tell if my card payment is reverted?
+  - intent: change_pin
+    examples: |
+      - How can I change my PIN without going to the bank?
+      - How can I change my PIN even though I'm out of the country in Austria at the moment?
+      - How do I change the PIN?
+      - How can I reset my PIN?
+      - How can I set a new pin.
+      - How do I change my card PIN?
+      - How do I go about changing my PIN?
+      - How can I alteration my PIN?
+      - How do I change my PIN abroad?
+      - How can I change my Rowlock ?
+      - How can I change my old pin to a new one?
+      - How can I change my PIN?  Help.
+      - How do I change my pin while traveling?
+  - intent: beneficiary_not_allowed
+    examples: |
+      - How can I transfer money to a beneficiary?
+  - intent: transfer_fee_charged
+    examples: |
+      - I got an unexpected charge on my transfers. How can I correct this?
+      - How much do I have to pay if I want to transfer money?
+      - I thought transfers were free of charge.  I bought something abroad and got charged a ridiculous fee. How do I get this problem fixed.
+      - How come I can see an extra charge for my transfer?
+      - How come a fee was charged when I tranferred money
+  - intent: receiving_money
+    examples: |
+      - How can my boss pay me directly to the card?
+      - How can my friend give me money?
+      - How can I receive money?
+      - How can my friend send money to me?
+      - How do I transfer funds if I am paid in GBP?
+      - How can I receive my salary with a different currency?
+      - I would like to receive my salary in a different currency. How does that work?
+      - How can people transfer money to me?
+      - How can you transfer my salary to my correct currency?
+      - I received my salary in the wrong currency. How do I change this?
+      - How do I get money from friends?
+      - How do I know what my account is set to, I am paid in GBP?
+      - How can I receive money from someone?
+      - How can I receive money from my friend?
+      - How does one send me money?
+      - How do I receive money from someone?
+      - How can I receive my salary in another currency?
+      - How would my friend be able to send me money?
+      - How to receive transfers from my employer when I get paid in GBP?
+      - How can my friend pay me?
+      - How can I configure what currency my salary is in if it's in GBP?
+  - intent: failed_transfer
+    examples: |
+      - Hey, I'm buying a flat and I need my mortgage to go though. However, every time I check I get an error message. Is there any way you can help me with this transfer.
+      - How can I find out why my transfer didn't go through?
+      - How is this transfer supposed to work? It's not working for me.
+  - intent: transfer_into_account
+    examples: |
+      - I want to transfer money. How do I do that for my account?
+      - How do I transfer money into my account?
+      - How can I link my bank to my top up account?
+      - How can you assist me on topping up on bank transfers to my account?
+      - I want to op up my account by using bank transfer. How do I go about it?
+      - How simple is it to transfer money into my account?
+      - How can my account have money transferred into it?
+      - How do I use bank transfer to top up my account?
+      - How do I top up?
+      - How can I move money from an account at another bank to this one?
+      - How can I move money from my account at a different bank to the account I have at this bank.
+      - How does it work when I transfer money into my account?
+      - How can I add money to my account from another account I have?
+      - How can I transfer money into my account?
+      - How do I go forth with bank transfers for top up accounts?
+      - How would I use a bank transfer for topping my account?
+      - How does a bank transfer for topping my account work?
+      - How is my money transferred to the account
+      - How do I top up my account with a bank transfer?
+      - How can I transfer some money into a foreign account?
+      - How do I top up my account using transfer?
+      - How do I go about transferring money into my bank account?
+      - How do I go forth on transferring a sum of money from one account to another?
+      - How do I initiated a bank transfer to top up?
+      - How can I transfer money between accounts?
+      - How can I deposit money to my account?
+      - How do I transfer money between two of my accounts?
+      - How do I transfer cash my into my account?
+      - How can I top up my account by bank transfer?
+      - How does your app transfer the money
+      - How do I deposit through bank transfer?
+      - How can I go about transferring money to my account?
+      - How can I transfer money to this account from another bank?
+      - How do I transfer money from one bank account to another?
+  - intent: verify_top_up
+    examples: |
+      - How can I verify my top-up card?
+      - How is top-up verified?
+      - How do i verify my card?
+      - How do I verify my top up?
+      - How do I find the top-up verification code?
+      - How can I verify the top-up card?
+      - How do I find the code needed in order to verify my top-up card?
+      - How do i find my top-up card's verification code?
+      - How do I verify the top-up?
+      - How many digits identify the top-up verification code?
+      - How to verify top up card?
+      - How do I verify the top-up card?
+      - How do I verify the top up?
+      - How do i authenticate a top-up card?
+      - How do i secure a top-up card?
+      - How are top-ups verified?
+      - How do I authenticate my top-up?
+      - How can I verify my top up?
+      - How do I go about verifying the top-up card?
+  - intent: getting_spare_card
+    examples: |
+      - How much does it cost to get more cards?
+      - How can I create another card linked to this account?
+      - How many physical cards am I allowed to have?
+      - How can I get another card?
+      - How many cards am I allowed?
+      - How do I get a spare card?
+      - How do i request more physical cards?
+      - How do I obtain a second card?
+      - How much is it to buy another card? I was hoping to buy another one.
+      - How much would an extra card cost?
+      - How many different cards can I have for my account?
+      - How do I get extra physical cards?
+      - How many cards can I have?
+      - How do I receive more physical cards
+      - How many active cards can I have?
+      - How much does it cost for additional cards?
+      - How do I order another card?
+      - How much is it to send out additional cards?
+      - How do I get another card
+      - How do I go about ordering another card?
+      - How do I get extra cards?
+      - I need another card for a member of my family. Is this possible? How soon can I get one?
+  - intent: top_up_by_cash_or_cheque
+    examples: |
+      - How do I top up with a cheque?
+      - How can I put more money into my account?
+      - How do I top up with cash?
+      - How do I use a cheque to top up?
+      - How can I add physical money to my card?
+      - How do I top up by cheque?
+      - I want to do a cash deposit to top up. How do I do this?
+      - How can I top up with a cheque?
+      - How dp i top up with a cheque ?
+      - How do you top up with a cheque?
+      - How do I deposit cash?
+      - How do I use a check to top up?
+      - How do I use cash to top up my account?
+      - How do I top-up my card with a cheque?
+      - How can I fill up my gas tank using a check?
+      - How do I add cash to my account?
+      - How do you top-up using cash?
+      - How would I top up with a cheque?
+      - How long before a check I send clears?
+      - How can I top up my account with a cheque?
+  - intent: order_physical_card
+    examples: |
+      - How much does it cost for a physical card?
+      - How do I get a real card?
+      - How do I go about getting an actual card?
+      - How can receive a physical card
+      - How do I get my card?
+      - I really want a physical card. How do I get one?
+      - How can I order a card?
+      - How to order my card?
+      - How much for an actual card?
+      - How do I actually obtain a card myself?
+      - How can I order my card?
+      - How do I order a card?
+      - How to receive the actual card
+      - How do I order my card?
+      - How do I receive a card?
+      - How do I go about ordering a card?
+      - How do i receive a physical card?
+      - I still don't have a card. How do I get one?
+      - How much is a physical card?
+      - I'm interested in getting a card. How does one go about doing that?
+      - How would I go about getting a physical card to use in stores?
+      - I would like to have a physical card to carry around and use. How can I get one?
+  - intent: virtual_card_not_working
+    examples: |
+      - How do I get this damn virtual card to work?
+  - intent: wrong_exchange_rate_for_cash_withdrawal
+    examples: |
+      - How can I get money in my home currency while I'm traveling internationally? I wanted to take it out of a local ATM but am worried that I will get charged extra fees.
+      - How did you arrive at the rate of exchange? I thought that I would get more cash.
+      - How do you figure out the exchange rate? Can you explain why I got less money than expected?
+  - intent: get_disposable_virtual_card
+    examples: |
+      - How do I get a disposable virtual card as well?
+      - How can I get disposable virtual cards?
+      - How do I request a disposable virtual card?
+      - How can I create a disposable virtual card?
+      - How does a disposable virtual card work?
+      - How do I create a disposable virtual card?
+      - How about disposable virtual cards?
+      - How can I go about getting a disposable virtual card?
+      - How can I get a disposable virtual card?
+      - How can disposable cards be used?
+      - How would I use a disposable card?
+      - How do I order a disposable virtual card?
+      - How do I use disposable cards?
+      - How can I get a virtual card for a one-time transaction?
+      - How do I receive a disposable virtual card?
+      - How do I use the disposable cards?
+      - How do I know if i need a disposable card?
+      - How can I obtain a disposable virtual card?
+      - How to a go about ordering a disposable virtual card?
+  - intent: top_up_failed
+    examples: |
+      - How can correct Top up with the app to work correctly?
+      - How do I know if my top up worked?
+      - Why is my card being declined when I try to do a top-up? How can this be immediately resolved?
+      - Won't let me top my card up!! Who can get it sorted out for me? It's urgent! How do I find out what the problem is with my card and how else to top it up?
+  - intent: balance_not_updated_after_bank_transfer
+    examples: |
+      - How long will it take for a bank transfer to show up on my account? It's been a couple hours but I havnt seen anything yet. Also it's from a UK account if that makes any difference.
+      - I just made a transfer from a UK account. How long does that typically take to show up? I just want to make sure it worked alright.
+      - How long before a bank transfer shows up in the account?
+      - How soon will my balance be updated to reflect my transfer?
+      - How can I fix my bank transfer to show up on my bank account?
+      - How long do bank transfers take to clear
+      - How long to UK transfers usually take? I made a transfer but it didn't pop up in my history yet. I just want to make sure it went through.
+      - How long does it take for a bank transfer to show on my balance?
+      - How long do transfers to international banks take? I made one to france a couple of days ago, but it's still not there.
+      - How long do transfers take to show up in my account?
+      - How long does it take for a transfer to post
+      - How long does transfers take?
+      - After making a transfer from a UK account it's not showing up. How long do these transfers normally take for you? I want to be certain everything is all right.
+      - How long do I need to wait to see an update after I make a bank transfer?
+      - How long does a transfer from a UK account take? I just made one and it doesn't seem to be working, wondering if everything is okay
+      - How long do transfers from a UK bank account usually take for you? I just made a transfer and I'm not seeing anything, wondering if it worked
+      - How long does a bank transfer take to show up in available funds?
+      - I need to know if everything is okay here. After making a transfer from a UK account it doesn't show up. How long does this normally take to process?
+      - How long does it typically take to make a transfer from a UK bank? I just made one and it hasn't shown up in my account yet.
+      - How long before transferred money shows up?
+      - How long do transfers take to go though
+      - I made a transfer from France a couple days ago and don't see the transaction yet. How long does an international transfer take?
+      - How long does an international transfer take? I made the transfer from France 2 days ago, but it is not showing up in my bank yet.
+      - How long does it take for money to transfer?
+      - I want to be sure that everything is okay here. I just made a transfer from a UK account and it is still not showing up. How long does this typically take?
+      - How long do tranfers from a UK account usuallt take for you? I just made a transfer and nothing shows up, so just wondering if things went ok
+      - How long does it take for money to transfer as my balance hasn't been updated
+      - How long do I have to wait for my bank transfer to appear in my account?
+      - How long does a transfer from the United Kingdom take? I haven't seen it show up yet in my bank account and want to make sure I get the transfer.
+      - I transferred some money a couple days ago but haven't received it yet. How long should I expect to wait?
+      - How long does it take for money to reach my account?
+      - How long do bank transfers usually take?
+      - How long does a transfer from the UK account usually take? After completing the transfer it is not showing up. I need to know that everything I actually went okay.
+      - How long do I have to wait until the transferred money shows up?
+  - intent: cash_withdrawal_not_recognised
+    examples: |
+      - I got a notice from my app that I withdrew cash but I don't remember doing so. How do I fix this?
+      - My identity has been stolen. I still have my physical card but there are charges I didn't make on my account. How do I cancel this card or dispute the charges?
+      - How do I report a cash withdrawal that wasn't me?
+      - How can I verify if a cash withdrawal was made from my account? I still have my card with me but I did not authorize the withdrawal that just occurred.
+      - Someone has access to my card info.  I still have the card, but someone just withdrew cash.  How do I get this corrected/stopped?!
+  - intent: exchange_charge
+    examples: |
+      - How much is the exchange fee?
+      - How much more do you charge for currency exchange?
+      - How much will I be charged for a cross-currency exchange?
+      - How much extra will I be charged for exchanging foreign currency?
+      - How much to exchange currencies?
+      - How much do I have to pay to accept an international transfer?
+      - How much does currency exchange cost?
+      - How much do you charge for exchange rates?
+      - How much does it cost to exchange my balance into a foreign currency?
+      - How high is the exchange fee?
+      - How much is the charge for a foreign currency exchange?
+      - How much will I be charged for exchanging foreign currency
+  - intent: top_up_by_card_charge
+    examples: |
+      - How much are the fees for adding funds using an international card?
+      - How much are you going to charge me if I top up my US card?
+      - How much is the charge to top up via credit card?
+      - How much does it cost to top up a US-issued card?
+      - How much does it cost to us US cards?
+      - How much is it to use my US debit or credit card to top up?
+      - How much does top up fees cost?
+  - intent: activate_my_card
+    examples: |
+      - How do I verify my new card?
+      - How do i activate my card
+      - I want to use my card. How do I activate it?
+      - How can I activate my new card? I didn't recieve any information with it about how to do so.
+      - How do I activate my new card I just got?
+      - How do I get my card active?
+      - How can my new card be activated?
+      - How do I turn on my new card?
+      - How do I activate my card, so that I can start using it?
+      - How do I activate my card to start using it?
+      - How can I activate my new card?
+      - How can I activate the new card i got?
+      - How do I activate a card?
+      - How long does it take to activate my card?
+      - How do I activate my card so I can start using it?
+      - My new card came in.  How do I activate?
+      - How do I active this card?
+      - How can i make my card active?
+      - How can I switch on my new card?
+      - How long does it take to activate the card, as it does not look like its working?
+      - How can I make my card ready to use?
+      - I have a new card. How do I activate it?
+      - How do I activate my new card
+      - I just got my new card.  How can I activate it?
+      - How can my new card be renewed?
+      - How do I activate my card that just arrived?
+  - intent: cash_withdrawal_charge
+    examples: |
+      - How do I avoid a fee to use an ATM?
+      - How much can I withdrawal in one month without incurring fees?
+      - How much money can I withdraw before fees? I noticed a fee on my card but I didn't think I had hit the limit of how much I could withdraw in a month.
+      - How come I got to pay to get my money from the ATM?
+      - When I withdrew money from my account the other day, I noticed that there was a fee.  I didn't think that there were any fees for withdrawals...?  How much will I be charged?
+      - How come my cash withdrawal came with an unnecessary fee?!
+      - Since when were there charges for taking out cash from my account? It's always been free for me to do this before.  How much are the charges going to be?
+      - How come I got charged extra for withdrawing cash?
+      - Have you started charging for cash withdrawals? I always thought it was free until I noticed this fee. How much is the fee?
+      - I was recently charged for withdrawing money from my bank ATM. How can that be possible when I haven't been charged for using it before?
+      - When did you start charging to make a withdrawal? How much is it now? I always thought it was free.
+  - intent: card_about_to_expire
+    examples: |
+      - My card expires next week. How do I get a new one?
+      - My card is about to expire.  How do I get a new card?
+      - How can I replace an expired card?
+      - How do I get a new card sent to China?
+      - How do I know when my card will expire?
+      - How do I order a new card when my old one is ready to expire?
+      - How do I replace a card that's going to expire?
+      - How do I order a new card? The current one is about to expire.
+      - My card is about to expire.  Are there any costs with a replacement card?  How quick do you mail it to me?
+      - My card is about to expire.  How do I order another?
+      - My card is expiring soon, How do I order a new card?
+      - I will need a new card because mine is almost expired.  How fast do I get a replacement and what is the cost?
+      - How do I replace my card before it expires next month?
+      - How do I replace my card before it expires?
+      - How can I get a card sent to China?
+      - How do I order a new card if my current one is about to expire?
+      - How do I go about ordering a new bank card?
+      - How do I replace my card?
+      - How do I get a new card when my old one expires?
+      - My card is almost expired.  How fast will I get a new one and what is the cost?
+      - How do I get a new expiration date?
+  - intent: apple_pay_or_google_pay
+    examples: |
+      - Hi, I have an apple watch. How do I use it to top up my card?
+      - How do I go about topping up with Google Pay?
+      - How do you Top Up on the apple watch?
+      - How can I set up Google Pay on my device?
+      - How do I get Top Up to work in Apple Pay?
+      - How do I top up using my Apple Watch?
+      - How do i top up my google pay?
+      - How can I top up with my apple watch?
+      - How to activate Google Pay for top up?
+      - How can I get my Google pay top up to work?
+      - How can I top up using google pay?
+      - How can I top up with Google play?
+      - How can I top up with Apple Pay?
+  - intent: verify_my_identity
+    examples: |
+      - How can I prove I am me?
+      - I need to verify my identity. How do I do that?
+      - How do I verify my identity?
+      - How do I verify my identity online
+      - How do I prove I am who I am?
+      - How and where can I find the identity checks?
+      - How recent do my documents need to be for verification?
+      - How can I verify my identity?
+      - How do I perform identity checks?
+      - How do I go through the identity checks?
+      - How can I prove who I am?
+      - How do I verify my ID?
+      - How do I fill out the identity check?
+      - How do I validate my identity.
+      - How do i change my identity?
+      - How can you assist on verifying my identity?
+      - How do I go about verifying my identity?
+      - How do I complete the ID check?
+      - How do you check my identity?
+  - intent: country_support
+    examples: |
+      - How do I get a card if I live in the US?
+      - How do I get a card in the EU?
+      - How does a US resident go about acquiring a new card?
+      - How do I sign up for a card if I'm in America?
+      - How do I find out what countries you service and what countries you do not?
+      - How many countries do you work in?
+      - How do I know which countries you provide service in?
+      - I live in the US and I would like to get a card. How do I go about getting one?

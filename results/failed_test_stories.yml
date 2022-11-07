@@ -1,0 +1,51 @@
+version: "3.1"
+stories:
+- story: sad path 1 (.\venv\Lib\site-packages\rasa\cli\initial_project\tests\test_stories.yml)
+  steps:
+  - intent: greet  # predicted: nlu_fallback: hello
+  - action: utter_greet
+  - intent: mood_unhappy  # predicted: nlu_fallback: not good
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm  # predicted: nlu_fallback: yes
+  - action: utter_happy
+- story: sad path 2 (.\venv\Lib\site-packages\rasa\cli\initial_project\tests\test_stories.yml)
+  steps:
+  - intent: greet  # predicted: nlu_fallback: hello
+  - action: utter_greet
+  - intent: mood_unhappy  # predicted: nlu_fallback: not good
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny  # predicted: nlu_fallback: not really
+  - action: utter_goodbye
+- story: sad path 3 (.\venv\Lib\site-packages\rasa\cli\initial_project\tests\test_stories.yml)
+  steps:
+  - intent: greet  # predicted: nlu_fallback: hi
+  - action: utter_greet
+  - intent: mood_unhappy  # predicted: beneficiary_not_allowed: very terrible
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny  # predicted: nlu_fallback: no
+  - action: utter_goodbye
+- story: say goodbye (.\venv\Lib\site-packages\rasa\cli\initial_project\tests\test_stories.yml)
+  steps:
+  - intent: goodbye  # predicted: nlu_fallback: bye-bye!
+  - action: utter_goodbye
+- story: bot challenge (.\venv\Lib\site-packages\rasa\cli\initial_project\tests\test_stories.yml)
+  steps:
+  - intent: bot_challenge  # predicted: country_support: are you a bot?
+  - action: utter_iamabot
+- story: happy path 1 (.\tests\test_stories.yml)
+  steps:
+  - intent: greet  # predicted: nlu_fallback: hello there!
+  - action: utter_greet
+  - intent: mood_great  # predicted: lost_or_stolen_card: amazing
+  - action: utter_happy
+- story: happy path 2 (.\tests\test_stories.yml)
+  steps:
+  - intent: greet  # predicted: nlu_fallback: hello there!
+  - action: utter_greet
+  - intent: mood_great  # predicted: lost_or_stolen_card: amazing
+  - action: utter_happy
+  - intent: goodbye  # predicted: nlu_fallback: bye-bye!
+  - action: utter_goodbye

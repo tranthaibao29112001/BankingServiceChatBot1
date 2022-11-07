@@ -1,0 +1,33 @@
+version: "3.1"
+
+stories:
+
+- story: ask name path
+  steps:
+  - intent: greet
+  - slot_was_set:
+      - user_name: null
+  - action: utter_ask_name
+
+- story: greet with name path
+  steps:
+  - intent: greet
+  - slot_was_set:
+      - user_name: Bao
+  - action: action_greet_with_name
+
+- story: introduce name path
+  steps:
+  - intent: user_introduce
+  - action: action_greet_with_name
+
+- story: ask balance path
+  steps:
+  - intent: account_balance
+  - action: utter_card_id
+  - intent: give_card_id
+    entities:
+      - card_id: 123456
+  - slot_was_set:
+      - card_id: 123456
+  - action: action_show_balance
