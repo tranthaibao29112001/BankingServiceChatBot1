@@ -1,7 +1,6 @@
 import csv
 import os
 
-import click
 import pandas as pd
 import ruamel.yaml
 
@@ -62,7 +61,7 @@ class Converter(object):
             intent_texts = df[
                 df[self.intent_column] == intent][self.text_column].tolist()
 
-            intent_texts = filter(lambda x: x.find("What is") != -1, intent_texts)
+            intent_texts = filter(lambda x: x.find("What") == -1 and x.find("How"), intent_texts)
             # Workaround that allows for injection of scalar literal '|'
             intent_texts_str = ''
             for text in intent_texts:
@@ -136,4 +135,4 @@ def convert(file_path: str,
 
 
 if __name__ == '__main__':
-    convert('C:\\Users\\DELL\\Desktop\\train.csv', 'intent', 'text', 'examples', '3.0', '.', 'nlu_what_is.yml', False)
+    convert('C:\\Users\\DELL\\Desktop\\train.csv', 'intent', 'text', 'examples', '3.0', '.', 'nlu_other.yml', False)

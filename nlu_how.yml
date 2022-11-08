@@ -595,6 +595,15 @@ nlu:
       - How do I report fraud on my card?
       - How do I report possible fraudulent activity on my account?
       - How do I order a replacement for stolen card?
+      - What do I do if I detect fraudulent use on my car?
+      - There are strange transactions on my account.  What should I do if I think someone stole my details?
+      - I sees some suspicious spending on my credit card that I don't recall I had made. What should I do?
+      - Someone might be using my card.  What should I do?
+      - What can I do if my card details where stolen from my car? I think they used my card to buy gas.
+      - What should I do if I think someone is using my card without my permission?
+      - What should I do if I think there are unauthorized transactions?
+      - What should I do if someone else used my card?
+      - What steps can I take if someone else is using my card?
   - intent: atm_support
     examples: |
       - How do I withdraw money?
