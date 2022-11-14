@@ -1,0 +1,1834 @@
+version: '3.0'
+nlu:
+  - intent: card_arrival
+    examples: |
+      - I have been waiting over a week. Is the card still coming?
+      - Can I track my card while it is in the process of delivery?
+      - Do you have info about the card on delivery?
+      - Does the package with my card have tracking?
+      - I still haven't received my card after two weeks, is it lost?
+      - Can you track my card for me?
+      - Is there a way to track the delivery of my card?
+      - I don't have my card in 1 week.  Should I be worried?
+      - It's been a week since you issued me a card and I still didn't get it. Should I keep waiting?
+      - Is there a tracking number for the card you sent me?
+      - Can I get an update on my replacement card?
+      - Is my card lost? I am still waiting for it to be delivered.
+      - Is there a way I can get my card expedited?
+      - Can I track the card you sent to me?
+      - Does the card you sent have a tracking number?
+      - Is there a reason my new card hasn't arrived yet?
+      - Can I track the card that was just sent to me?
+      - Is there a way to track my card?
+      - Is there a way to track the new card you sent me?
+      - Can you help me track my card?
+      - Is there a reason my new card hasn't arrived?
+      - Is there a tracking number for the card?
+      - can you share card tracking number?
+      - Is there a way I can check on the card on route to me?
+      - Is it possible for me to track the card is was mailed to me?
+      - Do you have a tracking number for the card I was sent?
+      - Is my new bank card on the way and is there a way to track it?
+      - Is it possible to track the card you sent me?
+      - Can the card was sen to me be tracked?
+      - Can I track the card that you sent me in the mail?
+      - Can you tell me if I can track the card you sent me?
+      - Is a tracking number available for the card that was just sent?
+  - intent: card_linking
+    examples: |
+      - My card has been found. Is there any way for me to put it back into the app?
+      - Is there any way to see my card in the app?
+      - If I find a card I lost do I need to dispose of it? Or can I re-active the card and continue to use it?
+      - I found my old card. Can I link it back into the app?
+      - I finally got my card.  Now I want to link it.  Is that something you have to do or can I do that?
+      - If I have a physical card can I link it?
+      - Can I add a card that I just found (again) to the app?
+      - Okay, I found my card, can I put it back in the app?
+      - Can I reactivate a card?
+      - I would like to reactivate a card and wondered if that could be done?
+      - The card I thought was lost was just in my jacket, so can I reactivate it since I found it this morning?
+      - Can you please reactivate my card?
+      - May I reactivate my card? I previously reported it lost, but have now found it safe and sound.
+      - Will I need a new card or can I put my old card back into the app?
+      - Is there a way to link the card i just got?
+      - Can I put my old card back in the app?
+      - I found the card I thought I lost this morning. Can I reactivate this card?
+      - Can I add a card to back into the app?
+      - I want to link my new card. Can you help?
+      - I found my card in my jacket this morning, so can I reactivate it?
+      - Can I activate a card in the app?
+      - Can I reactivate my card? I reported it lost and found it this morning in my jacket.
+      - Can I link my card I previously received?
+      - Can I add a card back to the app?
+      - I recently reported my card as missing/lost, and I just found it. Can I still use it?
+      - Is there a way to link cards if I have one of yours?
+      - If my card was lost or stolen can I re-link it?
+      - Can I re-link a lost card with the app?
+      - Is it possible to link a new card?
+      - can I link a card of yours I already have?
+      - Can I put my found card back into the app on my phone?
+      - I found my card again. Can I put it back into the app?
+      - I found my card! Can I link it back into the app?
+      - Is it possible to reactivate the card I thought I lost but found this morning in my jacket?
+      - The card I thought I lost was in my jacket pocket this morning, so can I reactivate that?
+      - I have a card that was deactivated can I reactivate it?
+  - intent: exchange_rate
+    examples: |
+      - Do you know the rate of exchange?
+      - Do you have the best exchange rate?
+      - Is there an exchange rate?
+      - Does the exchange rate change?
+      - Is the exchange rate the same on weekends as the weekdays?
+      - Is the exchange rate current?
+      - Is there a specific source that the exchange rate for the transfer I'm planning on making is pulled from?
+      - Can you explain your exchange rates basis?
+      - Can you tell me your exchange rates?
+      - Does this app have the same exchange rate as third parties?
+  - intent: card_payment_wrong_exchange_rate
+    examples: |
+      - Last Saturday, I was charged extra for the exchange rate on my payment. Is something wrong?
+      - Hi, I am disappointed to see such a bad exchange rate and hope you can assist me. Would you be able to confirm the official interbank exchange rate for me?
+      - I just saw the exchange rate you use, but it's so bad that I can't believe that it's the official interbank exchange rate! Is this truly the official interbank exchange rate?
+      - I'm on holiday and I noticed a different amount for exchange rate.  Can you explain?
+      - I checked on google and the exchange rate you are using is really bad. Can you update it?
+      - Can you change the rate for the item I bought in a different currency as it is wrong?
+      - Does the fee for exchange change?
+      - Does the exchange rate change each day for purchases? There is a different rate on my purchase.
+      - I exchanged Russian rubles for British pounds today and got less than I expected. Was exchange rate correct?
+      - I noticed an extra charge on the purchase that I made last Saturday on my account. Can you see if I received the correct exchange rate?
+      - The exchange rate you're using is terrible - this can't be the official interbank exchange rate, can it?
+      - Are you sure this is the interbank exchange rate? This rate is really bad.
+      - I think I was charged extra on my payment on last Saturday.  Maybe the exchange rate was wrong?  I'd like a refund.
+      - Are you ripping people off with the exchange rate?  It can't be that atrocious between banks.
+      - I recently bought something in foreign currency and I am unsure of the exchange rate. Is this rate applied correctly?
+      - The exchange rate is bad. Are you sure this is the exchange rate?
+      - Hello, I believe there has been a mistake made on the exchange rate for my card. Could you please check the official interbank exchange rate for me?
+      - I made a purchase but the exchange rate is wrong?
+  - intent: extra_charge_on_statement
+    examples: |
+      - Is the 1 pound charge I can see an error or an incorrect entry?
+      - Do you also have this extra fee on your statement?
+      - There is a pending payment on my account that is very strange. I don't remember making this and it won't go away. Can you help me figure this out?
+      - There is an unexplained $1 charge on my statement, can you please explain this to me?
+      - Hello, I see that I have been charged an extra $1 on my app.  Could you please provide me with a reason for this charge?
+      - Is there a reason there's an extra fee on my statement?
+      - Is the 1 pound charge going to be reimbursed on my card?
+      - Do I have a $1 extra fee on the statement?
+  - intent: pending_cash_withdrawal
+    examples: |
+      - Hey, I tried to withdraw some cash earlier and it's saying it's pending? Will I be charged for this?
+      - I noticed on my online statement that an ATM withdrawal I made early is still pending.  Is this accurate?
+      - I didn't receive my money earlier and it says the transaction is still in progress. Can you fix it?
+      - Looking at my account I've noticed a charge that appears to still be in progress. I had attempted to get money out of the machine earlier but the machine seemed to have been broken. I never received my money so will you please look into this for me? I don't want to be charged for money I never actually received.
+      - I tried to withdraw money, but was unable to. Still says that the transaction is pending? Will this money disappear??
+  - intent: fiat_currency_support
+    examples: |
+      - Do you allow currency exchanges?
+      - Is the EUR accepted for exchanges?
+      - Is it okay to hold money in multiple currencies?
+      - Can I have money in more than one currency in my account?
+      - Are EUR exchanges allowed?
+      - Do you convert to Euro?
+      - Can exchanged be made to EUR?
+      - Do you support other currencies?
+      - Can you convert to EUR?
+      - Are there any fiat currencies that you will not work with?
+      - I wondered if multiple currencies is okay?
+      - Are all fiat currencies supported?
+      - Can you tell me the names of the fiat currencies that I can use at your institution?
+      - Can I change or hold different currency?
+      - Are all European currencies available for holding and exchange?
+      - Can you do exchanges of EUR?
+      - Can I hold more than one currency?
+      - Is it possible to hold money in multiple currencies?
+      - Can I have multiple currencies in my account?
+      - Do you support fiat currencies?
+      - Is my country's currency supported by your system?
+      - Can you make exchanges with the EUR?
+      - Is EUR one of the currencies you deal with?
+      - Are EUR exchanges acceptable?
+      - Do you offer services that hold money in different types of currency?
+      - Do you provide currency exchange to Euros?
+      - Do you have a problem with EUR exchanges?
+      - Can I exchange currency to Europe?
+      - Do you allow exchanges of EUR?
+      - Are you able to make exchanges to EUR?
+      - Does my account have the option to hold multiple currencies?
+      - can I have multiple currencies?
+      - Can you make exchanges using the EUR?
+      - Is it possible to hold money in different currencies?
+      - are multiple currencies acceptable?
+      - Do you deal with EUR?
+      - Do you have EUR currency available for me?
+      - Is my fiat currency supported for both hold and exchange?
+      - Do you have support for flat currencies?
+      - Can you change my currency to EUR?
+      - Are you okay with exchanges to EUR?
+      - Can I exchange my money for EUR?
+      - Can you tell me if I can hold money in several currencies?
+  - intent: card_delivery_estimate
+    examples: |
+      - Can it specifically be delivered on a certain date?
+      - Can I get my card fast tracked?
+      - Can I have it delivered on a specific date?
+      - Can I specify a day for my card to be delivered?
+      - can the delivery be specific to my needs?
+      - can I choose delivery times to suite me?
+      - Can I choose the day it's delivered?
+      - I'd like to have it delivered on Saturday.  Is that possible?
+      - Can I have it delivered on the date I need it delivered?
+      - Can cards be dispatched on a specific date?
+      - Can I have it by a certain date?
+      - Is there a specific date it can be delivered by?
+      - Is there a specific date i can have it delivered?
+      - Can I pay more to get it deliver quicker?
+      - can you express my card to me?
+      - If I need delivery on a certain day, is that something that could be accommodated?
+      - I placed my order a week ago. Is it ok that my card isn't here yet?
+      - Can I have my card delivered on Tuesday?
+      - Can i choose a specific delivery date?
+      - Are the delivery days flexible?  My schedule only allows me to be a available on specific dates.
+      - Can it be delivered on a certain date?
+      - are you sending me my card?
+  - intent: automatic_top_up
+    examples: |
+      - Can I add money automatically to my account while traveling?
+      - Does the auto top-up have any limits?
+      - Can I have money transferred into my account at different intervals along my trip?
+      - I going to be traveling, can I set up auto top-up if I run low on money?
+      - Is there an automatic top up feature?
+      - Can I have my account add money automatically in certain intervals?
+      - Is there a daily auto top-up limit?
+      - I will be traveling.  Can I add money automatically?
+      - Is there a auto top-up option?
+      - If there isn't much money left over, will it top-up automatically?
+      - Do I need to set a limit on auto top-up?
+      - Can I add money to my card automatically during a trip?
+      - Is an auto top-up option available?
+      - Can I auto top if I'm low on funds?
+      - Can i set up an auto top-up?
+      - Are there any limit on the auto top-up?
+      - Is it possible to do auto top up?
+      - If I don't have much money in the account can I auto top-up?
+      - Can I schedule future top ups?
+      - Can I set automatic top ups?
+      - Can I set up to my account to automatically top up?
+      - Does the app top up automatically?
+      - If there isn't a lot of money left, will it automatically top-up money?
+      - Does auto top-up have a limit?
+      - If I am running low on credit can I auto top up?
+      - Is there an auto top up feature?
+      - Is there such thing as an auto top-up option?
+      - Is there an auto top up option?
+      - I'm going to travel, can I have it add money automatically in certain intervals?
+      - I will be traveling and want money to be added automatically in certain intervals. Is this possible?
+      - Do I have to manually top up once I'm too low?
+      - Is auto top up a provided service?
+      - Can I set the account to auto top-up?
+      - Are there any hidden limit on the auto top-up?
+      - Is auto top up available?
+      - Do you offer auto top ups?
+      - Is there a limit on auto top-up?
+      - If my funds are running low, will the app top up automatically?
+      - Can I set it up to add money every few days automatically while I am traveling?
+      - Can I use an auto top-up option?
+      - Can topping up be automatic?
+      - Can I auto top up multiple times?
+      - I want to use auto top-up. Is there a limit?
+      - Do you have an option for auto top up?
+      - If my account is low in funds, can I set an auto top-up?
+      - Can I get an auto Top-up?
+      - Can it automatically top up my account?
+      - Can I top-up automatically?
+      - Can I setup top ups in advance?
+      - Is there a way to set up an auto top-up?
+      - Can it add money every so often automatically while I travel?
+      - Will the system automatically update once there is no more money left?
+      - Do I have to manually top-up my account each time or will it do it on its own?
+      - Can I auto top-up as much as I want?
+      - Can I add money in intervals to my account?  I will be traveling.
+      - Is there a limit to auto top?
+      - My funds are low, can I auto top up?
+      - Is it possible to top-up automatically?
+  - intent: card_not_working
+    examples: |
+      - I think my card is broke?
+      - Is my card frozen?
+      - I can't seem to use my card. Can you help?
+      - Can I use app to reset PIN attempts?
+      - I tried to purchase airline tickets online this morning and my card information isn't working. Is there something going on with my account?
+  - intent: exchange_via_app
+    examples: |
+      - Can I change from AUD to GBP?
+      - I need to exchange between different currencies, like GBP and USD. Can I do that with your app?
+      - Is it possible to change from AUD to GBP?
+      - Can money be exchanged from one currency to another?
+      - Can i add a new currency to my account?
+      - Can I possibly change my currency to another?
+      - Is it possible to exchange currencies?
+      - Can turn my money into another currency?
+      - Is currency exchange possible?
+      - Can I use this app for both USD and GBP?
+      - Does your app allow currency exchanges between USD and GBP?
+      - With this app, will I be able to exchange currency?
+      - Does this app allow currencies to be exchanged?
+      - Can I exchange USD for GBP in your app?
+      - Is it possible to exchange currencies using the app?
+      - Can currencies be exchanged on this app?
+      - Is exchanging currencies a feature of the app?
+      - Is exchanging currencies one of your app services?
+      - Can I convert currency with the app?
+      - I might need to exchange between USD and GBP, is this possible with your app?
+      - Do you support changing the currency I use?
+      - Can I convert money into different currencies?
+      - Is there a way to make my money usable in another country?
+      - Can I use this app to exchange currencies?
+      - Can I exchange from USD to GBP?
+      - Does your app allow currency exchange from USD to GBP?
+      - Is this app capable of exchanging currencies?
+      - Is it possible to change from USD to GBP with your App?
+      - Can I use this app to exchange between dollars and pounds?
+      - Will this app allow me to exchange currencies?
+      - Is it possible to exchange USD and GBP on the app?
+      - I may need to exchange my USD for GBP, can your app do that?
+      - Can I exchange currencies with the app?
+      - Can I exchange currency for different types?
+      - Does this app exchange currencies?
+      - Is it possible to exchange currencies on the app?
+      - Will it be possible to change from USD to GBP with this App?
+      - I need to exchange a currency - can I do that here?
+      - Can I use your app to exchange USD for GBP?
+      - Can this convert money?
+      - Can I exchange currencies usign this app?
+      - Can this app be used to exchange currencies?
+      - Can I exchange USD and GBP from the app?
+      - Can this app exchange American and English currency?
+      - Does the app allow for exchanges between currencies?
+      - Can I use this app to change money?
+  - intent: lost_or_stolen_card
+    examples: |
+      - Can you provide information for freezing my card immediately?
+      - I can't find my card! Can you help?
+      - Can you tell me the status of my new card?
+      - My bag got stolen with all my cards. Can you please cancel my card and send a new one?
+      - Are you able to guide me to my card's location?
+      - Who can I speak with regarding a lost card?
+      - Is there any way for you to find my card?
+      - Can you help me retrieve my card?
+      - I lost my card. Can you help me?
+      - Could you assist me in finding my lost card?
+  - intent: age_limit
+    examples: |
+      - Can my children open an account?
+      - Is there any age limit?
+      - Hold old do my kids have to be to use the service?
+      - Can I start an account for my kids?
+      - Can I make an account for my kids?
+      - I'd like to open an account for my kids can I do that?
+      - Do you have any age limit?
+      - If I want my son to have his own account is that possible?
+      - Can my children get an account?
+      - Is there an age limit for opening an account?
+      - Can my 8 year old grandson open an account at the bank?
+      - If I want to get an account for my daughter, can I do that?
+      - I have young kids. Can they use this service?
+      - Do you have an age limit?
+      - Can I open an account for my children?
+      - I am 16 and just started working at McDonalds can I deposit my checks at your bank?
+      - Is there a possibility to open an account for my sons and daughters?
+      - Is there an age limit to get an account?
+      - Is my daughter eligible to open an account?
+      - May I get an account for my daughter?
+      - Can my children have an account?
+      - Is there any way I could open an account for my daughter?
+      - Can I get an account for my daughter?
+      - Do you offer account services for children and teens?
+      - Can I open up an account for my child?
+      - Is there a limit for age?
+      - Do you have a children account available?
+      - Can my teenager have an account?
+      - As my kids get older are they able to get set up with their own accounts?
+      - Do you have a limit for someone's age?
+      - Do you have any accounts for children ?
+      - Can my daughter make an account?
+      - Do you have to be 18 to make an account?
+      - Can I get an account for my son?
+      - DO I have to be 18 to open an account?
+      - Can I open an account for my offspring?
+      - Do you offer account's for minors?
+      - My son has just turned 13, is he old enough for an account?
+      - Do you guys have any age restrictions?
+      - Is there a minimum age for having an account?
+      - Is there a certain age I need to be?
+      - Is my child too young to sign up?
+      - Can I make an account for my daughter?
+      - Is it possible for me to set up separate accounts for my kids?
+  - intent: pin_blocked
+    examples: |
+      - I mistook my pin and now I am locked.  Can you unlock me?
+      - Can I reset my PIN if it is blocked?
+      - After inputting the wrong pin too many times, can you now help me unblock my pin?
+      - Can someone help me unblock my pin?
+      - Can I use app to unblock my card?
+      - Can I unblock my PIN in the app?
+      - 
+      I put the wrong pin too many times and now it is blocked. Can you help me unblock it?
+      - Can you unblock my blocked pin?
+      - My PIN can't access my card, can you help?.
+      - After putting in the wrong PIN too many times, I was blocked. Can you assist me in changing it?
+      - I put the wrong pin too many times and now it is blocked. Can you help me unblock it?
+      - Is there a way to reset my PIN?
+      - Can I unblock my pin using the app?
+      - I accidentally put in the wrong pin too many times and now I need to unblock it. Can you assist with this?
+      - Is there a number to call to get my pin unblocked?
+      - I was blocked by using the wrong pin too many times, can you help me?
+      - My PIN is not working, can you help?
+      - I entered the pin incorrectly too many times and now it is blocked. Can you help?
+      - Can you unblock my account?  I entered the PIN wrong.
+  - intent: contactless_not_working
+    examples: |
+      - The terminal I paid at wouldn't take my card. Is something wrong?
+      - Can I make a contactless payments?
+      - Are my contactless settings correct? I tried to use it today but it wasn't working.
+      - I am having issues using contactless payments, could my card be damaged?
+  - intent: top_up_by_bank_transfer_charge
+    examples: |
+      - Is there a top up fee for transfer?
+      - Is there a charge for SEPA transfers?
+      - Can you tell me the cost of a transfer?
+      - Do you receive SWIFT transfers?
+      - Can I do a SWIFT transfer?
+      - Is there a charge for using transfers for top ups?
+      - Do you accept SWIFT transfers?
+      - Are there fees for receiving a SEPA transfer?
+      - Is there a fee to top up by bank transfers?
+      - Do you offer SWIFT transfers?
+      - To receive money are there charges?
+      - Can I use SWIFT transfers?
+      - Is there a fee to make a transfer?
+      - Does it cost anything to transfer money for a top-up?
+      - If I top-up by using a trasfer are there charges that applied?
+      - Do I get charged if I get money?
+      - Are there any charges for receiving money?
+      - For topping-up is there a charge?
+      - Can I transfer money using the SWIFT service?
+      - Is there a charge for transfers?
+      - Do you charge anything for topping up?
+      - Are SWIFT Transfers available at this bank?
+      - Is there a charge for getting my money?
+      - Does this program take SWIFT transfers?
+      - do you have a fee for receiving a SEPA transfer?
+      - Am I able to do a SWIFT transfer with you?
+      - Is a SWIFT transfer acceptable?
+      - Am I able to do a SWIFT transfer?
+      - Are you aware of any charges for receiving money?
+      - Are SWIFT transfers supported?
+      - Is there a charge for receiving money?
+      - Can I transfer using SWIFT?
+      - Does it cost me anything to top up my account via bank transfer?
+      - Do you take SWIFT transfers?
+      - Is there a fee for topping off by transfer?
+      - Are there topping up fees if I have to transfer?
+      - Does it cost me to add cash?
+      - Do I get charged if I am receiving money?
+      - Are you going to charge me to collect the money?
+      - Can I Transfer from SWIFT?
+      - Do I pay a fee for SEPA transfers?
+      - Is there a cost to receive money?
+      - Can third party fees affect a transfer?
+      - Do you charge for transfers?
+      - Is there a top up fee?
+      - are SWIFT transfers an option?
+      - Are there any fees associated with receiving money?
+      - Is there any fees associated with receiving money with this account?
+      - Do you process SWIFT transfers?
+  - intent: pending_top_up
+    examples: |
+      - Says that my top-up is incomplete?
+      - I think my top up is still pending?
+      - My top up has been pending for an hour already, and I really need this to go through as soon as possible.  Can you help?
+      - I topped up and went to buy something, but it says that my funds are pending. Is there a way to quicken this process?
+      - I attempted to top up my account but it's been frozen in a pending state for well over an hour now! Is this normal? I'm a new customer and this is my first time doing this. I assumed it would be done quicker than this.
+      - Is my top up not working?
+      - I topped up about half an hour ago and the charge is still pending. I'm a new customer and today is my first time doing this. Can you fix it? It doesn't seem to be working.
+      - Is there a problem with the top up system? My transaction hasn't gone through properly
+      - Im trying to top up my card but it's still pending and it's been an hour. Is there any way to make it go through faster? Do I not have enough?
+      - I think something is wrong with your top up.  I've been waiting a little over an hour for this to go through, can you send it through for me?
+      - Is there a reason that my top-up is still pending?
+      - Is there something wrong with my top up I did an hour ago? it's still pending. I need that money, i cant afford to wait or have it come back to me.
+      - Is there a reason my top-up has not gone through?
+      - Can you please sort out your top up? I need this to go through asap because I really need the money. It's already been pending for an hour.
+      - Isn't my top-up supposed to mean its complete?
+  - intent: cancel_transfer
+    examples: |
+      - Can I cancel a transaction?
+      - Hi, I sent a payment to the wrong account number - can you cancel it as soon as possible?
+      - Is there a way to undo a transaction?
+      - Is it possible to cancel a transaction?
+      - My transfer was wrong, are you able to stop it before it goes through please?
+      - I would like to cancel a transfer...is this possible?
+      - I stupidly initiated a rent payment from the wrong account yesterday. It can't be paid from that account, but it really needs to get paid on time. Am I able to move the payment to the right account?
+      - Can you help me to quickly cancel a transaction I accidentally did to the wrong account?
+      - I don't think the transaction has gone through, so can I cancel a transfer?
+      - who do I talk to, to cancel a transfer?
+      - If I make a mistake can I cancel the transaction?
+      - I made a mistake on the last transfer I made, who must I speak with to cancel?
+      - Who do I call to cancel a transfer?
+      - It is extremely important that I cancel the transfer I made yesterday and put the money into a different account.  Is this possible?
+      - Is there any way to cancel a recent transfer?  I did not mean to make it and need to make sure it does not go through.
+      - Is there a way to revert a transaction?
+      - I have a transaction and would like to know if I it's cancelable?
+      - I just realised I made the wrong payment yesterday. Can you please change it to the right account? It's my rent payment and really really needs to be in the right account by tomorrow
+      - I've just made a money transfer to the wrong account, I need to stop the money from being moved as it may be going to someone I don't know.  Please can you help?
+      - I sent a payment to the wrong account number - can that transaction be reversed? I am worried about accidentally giving my money away.
+      - I made a mistake and did a transaction to a wrong account, can I cancel?
+      - I made a rent payment from the wrong account yesterday. It absolutely has to go through tomorrow, so can you please reroute the payment to the right account?
+      - I no longer want to transfer funds, can we cancel that transaction?
+      - I made a mistake of transferring, can I cancel my previous transfer?
+      - Can I stop a transaction?
+      - Is it possible for a transaction to be cancelled?
+      - is it possible to cancel transactions?
+      - Is it possible to cancel my transfer?
+      - Please can you block the transaction I just sent from my account? It was a payment but I accidently typed in the wrong details and think it might have gone to the wrong place.
+      - Please help me!  A payment I made had an error on the account number and I can't cancel on my side.  Can you cancel it?
+      - I didn't mean to do the transfer, is there any way to cancel it?
+      - Help please!  My rent payment is coming out tomorrow and I made a payment mistake yesterday! Can you put in in the correct account?
+      - I need help as fast as possible! I made a mistake on my most recent transfer; can you please stop it before it goes through?
+  - intent: top_up_limits
+    examples: |
+      - Are top-ups unlimited?
+      - Can I increase my top-up maximum?
+      - Can I top-up any amount?
+      - Would I be able to top up as much as I can?
+      - Do I have a limit to the number of top-ups per day?
+      - Are there any top-up limits?
+      - Is there a limit to the top-ups someone can do?
+      - Is there a top-up limit that I have to stay under during a given period of time?
+      - Is there a limit for the amount I can top up?
+      - Do top-ups have limits?
+      - Do top-up limits exist?
+      - Are there any top-up limits that I must follow?
+      - Can I top-up any amount I wish on any given day?
+      - Is topping up unlimited?
+      - is there a limit for top up?
+      - Can I set my own top-up limit?
+      - Are there any top-up limits involved?
+      - Are there limits with top-up?
+      - Is there a limit to my top-up?
+      - Is there a topping up limit?
+      - Can I create my own top-up limit?
+      - Can I top up?
+      - Do you limit my top-offs?
+      - Is the top-up amount unlimited?
+      - Is there a maximum for top-ups?
+      - Is there a top-up limit?
+      - Do you have any top-up limits?
+      - Do top-ups have a limit?
+      - Can I top up any amount?
+      - Can I use as many top-ups as I want?
+      - Do I need to use a limit on top-ups?
+      - Can you tell me the limit for top ups?
+      - Is there a limit for top ups?
+      - Do you limit my top-ups?
+  - intent: wrong_amount_of_cash_received
+    examples: |
+      - I went tot the ATM earlier today and didn't realize this till now but I did not get all the money I requested.  I believe my account was charged for 100 but I only got 80.  Is there any way we can solve this problem?
+      - I received the wrong amount of cash from the ATM. Can you help?
+      - Who should I contact if the amount of my withdrawal doesn't correspond to the amount that I tried to take out of my account?
+  - intent: card_payment_fee_charged
+    examples: |
+      - I was charged a fee for using my card. Can I check that in any way? It seems like there are occasions that I am charge for fees. Can you elaborate this?
+      - I got charged a service fee on my account. Can it be waived since I didn't know about it before?
+      - Is there a fee for paying by card?
+      - Hi, I am new to this. Are there any additional fees or charges that I should be aware of? I was looking through the app and I thought I saw something in regards to fee-free allowances.
+      - An extra fee has been added to my card payment is this correct?
+      - Is there a place to check for fee for payments? I feel like I'm getting charged too much at times.
+      - Is there an allowance on cards?
+  - intent: transfer_not_received_by_recipient
+    examples: |
+      - I transferred money but the recipient does not see the funds in their account?
+      - Two days ago I did a transfer to another account within the country.  It doesn't appear the transfer went through.  I have verified the account number several times.  Could you please check on this for me?
+      - I transferred some money to my mom 2 days ago and she has not received it. I double checked the information and it looks right. Can you help me?
+      - I sent money for my rent to my landlord but she is claiming it hasn't arrived in her account  Can you trace the transfer I made to make sure it arrived so I can provide proof I sent it and that it has been deposited?
+      - I can't see if the transfer I did a couple days ago is in my account yet. I double checked my info before sending, too. Can you check this?
+      - I'm trying to make a payment to my new landlord. Even though the payment was sent a few days ago, it isn't clearing on their side. Can you verify that payment has been made?
+      - I tried doing an in country transfer earlier this week. I thought it would be there by now but I still don't see the money. Can you check the status on my transfer?
+      - Hi, I sent my landlord my rent money a few days ago and while everything seems good on my end he says that he never got the money. I double checked the account number and it's correct. Can you help me figure this out?
+      - |I moved out of my old house two weeks ago and cancelled my direct debit to my old landlord, this direct debit was working fine.  Now I've moved in to a new place and set up a transfer to a new landlord but it's not reached her yet, can you check it please?
+      - The day before yesterday, I performed a transfer within the country. It still has not completed. Can you check on that? The account number is definitely correct, as I've checked.
+      - I performed a transfer within the country the day before yesterday, but it has not gone through? Can you check on that? The account number is definitely correct, as I've checked.
+  - intent: supported_cards_and_currencies
+    examples: |
+      - Is my credit card supported for top-ups?
+      - Am I able to add money into my account using my American Express?
+      - Can I use my American Express card to add money into my account?
+      - Do you accept any card and currency?
+      - Can I use a credit card from the US to top up?
+      - I only have one other credit card from the US. Do you accept that?
+      - Can I use American Express?
+      - Is American Express supported for adding funds?
+      - Can you accept my other card from the U.S.?  It is the only other one I have.
+      - Do you accept Mastercard?
+      - Are there certain cards and currencies you support?
+      - Can I use any card and currency?
+      - Can I top off with a debit card?
+      - Are cards from the US accepted?
+      - Do you accept all cards and currencies?
+      - I have one other credit card from the US. Do you take that?
+      - Can I electronically transfer funds into my account from my American Express?
+      - Can I top up my card with other cards?
+      - I have one other credit card from the US. Do you take it?
+      - Am I able to use my American Express to add money to my account balance?
+      - Do you have a list of cards and currencies you support?
+      - I just have one additional card from the USA. Do you support that?
+      - I only have a card from the US is that okay?
+      - Is American Express accepted?
+      - Can I use this app for any currency?
+      - Is American Express supported for adding money into my account?
+      - I only have one more US credit card, is it accepted?
+      - do you accept from usa credit card?
+      - Do you have a list of the cards and currencies supported?
+      - Do I have to top up in euros if I use a card, or can I use a different currency?
+      - Do you accept US credit cards?
+  - intent: getting_virtual_card
+    examples: |
+      - Can you give me a virtual card?
+      - Is it possible to order a virtual card?
+      - Can i have a virtual card?
+      - Can you help me find the virtual card?
+      - Do I get to have one of those virtual cards I've heard about?
+      - Can you assist me in acquiring a virtual card?
+      - And do you have virtual cards instead of physical ones?
+      - Is there a way to get a virtual card?
+      - I need to order a new card, can you please direct me to the virtual cards?
+      - Is there a way to order a virtual card on the website?
+      - Is there an alternative to a physical card?
+  - intent: card_acceptance
+    examples: |
+      - Are there businesses that don't accept this card?
+      - Is the card welcomed by everybody?
+      - Do you have a list of businesses that accept this card?
+      - Will this card work all over the world?
+      - Can I pay online with my card?
+      - Are there limits to businesses that will accept this card?
+      - Are there any limits to were my card is accepted?
+      - Can I use my card while on vacation overseas?
+      - Are there any places that won't take my card?
+      - Can I use my card for online payments?
+      - Do all businesses take this card?
+      - Can i use this card at any store?
+  - intent: top_up_reverted
+    examples: |
+      - Has my top-up been cancelled?
+      - My top up was reverted. Can you help?
+      - My top-up was supposed to be done, but now the money is gone! Is there a glitch in your system?
+      - Is there a reason my top-up has been cancelled?
+      - My money's disappeared from my account! I topped up the other day and it was there, but now it's not. Help?
+      - My top-up was cancelled, could my bank be the problem?
+      - Hi there, I came across a problem with my top up and my money is missing, was there a system error?
+      - Hello. I tried doing a topup and I thought it worked, but now the money is no longer in my account. Can you explain?
+      - Do you support top ups?
+      - Is there a reason for my top up to be cancelled?
+      - I am unable to use my top-up on the app. Could you explain this to me?
+      - My money disappeared! Please help??
+      - Hello there, I tried using crypto top up today but it's not working for me, might it be due to the kind of bank I'm using or the country that I'm from?Money is also missing from my account
+      - I attempted to complete a topup, and I thought all was well, but now the money is gone again. Has there been a glitch?
+      - I tried to add a topup to my account but the money isn't there, anymore. Did I do something wrong?
+  - intent: balance_not_updated_after_cheque_or_cash_deposit
+    examples: |
+      - I tried using a check to update my balance, but it isn't work? Is something wrong?
+      - I put some money in my account the other day and it's not gone in yet, can you help with this?
+      - I tried updating my balance by cheque yesterday but it doesn't seem to be working. Shouldn't that be faster? Please check my account something has gone wrong there.
+      - My account balance doesn't reflect an update I made by cheque yesterday. Is something wrong or is the system slow?
+      - I need my account checked because it appears there is a problem. I attempted to update my balance yesterday using cheque but it doesn't seem to have worked.  Should this not be faster than this?
+      - I sent you a cheque a few days ago and I noticed that nothing has happened yet. Can you tell me the status of my cheque please?
+      - My cash deposit from a week ago is still not in my account. Can you help me please?
+      - I sent a cheque a few days ago and i noticed that no money has been put on my account. Can you please tell me the situation of my account?
+      - Do you guys accept cash? Because i deposited some this morning and I can't see it in my account.
+      - I had a cheque deposited, but I don't see my money yet?
+      - I deposited a check yesterday and Im not seeing it in my account. i need the money, is there something wrong with my account? check it out please
+      - After trying to update my account balance yesterday by cheque it doesn't seem to working. Shouldn't the process be quicker? I need my account looked at because there appears to be a problem.
+      - Is there an issue with my account?  I don't see a cheque deposit that I made yesterday.  Please assist.
+      - The check I deposited yesterday isn't listed yet.  Isn't that pretty slow?  I need to see the balance increased by that check.
+  - intent: card_payment_not_recognised
+    examples: |
+      - Hi something is going on with the app.  I see some payments I didn't make?
+      - Just today there was a purchase on my card that wasn't done by me. Can this be reversed and my card be frozen? I can't have this continue!
+      - I need some help now please! There are some transactions on my account that I do not remember purchasing. Can they be reversed? Can you please cancel or freeze my card so I don't keep getting charged?!
+      - I need to freeze my card as soon as possible. I just checked my account and saw that there have been several payments that I don't recognize over the course of a few days. Can we investigate and get my money back?
+      - There are some charges that I don't recognize.  It happened days ago.  Can I get these charges back?  Should I cancel my card?
+      - There were a couple of payments that I have noticed on my account with my card that I didn't make. Is it possible that somebody else has my card information?
+      - I just saw some charges on my card from the past days that I dont recognize, I need to freeze the card asap! Will I be able to get my money back?
+      - I've got charges on my account I did not authorize. Can I get this money back from the last couple of days that it's been coming out? I also need to freeze my card.
+      - I need to freeze my card. There are charges on there that i did not authorize. They've been coming out for a couple of days. Can i get this money back?
+      - I need to cancel my card.  There are a few charges from a couple days ago that I didn't make.  Can I get credit for these charges?
+  - intent: edit_personal_details
+    examples: |
+      - I moved, can I edit my personal details?
+      - Can I change my details because I moved?
+      - Can I change my name?  I am not married.
+      - Is it possible to change my address?
+      - Is there a way to modify my details?
+      - Can I change my address?
+      - Can I update my details?
+      - is there a way to change name?
+      - Can someone assist me with updating my account details with changing my last name?
+      - Can I edit my personal details?
+      - Can I edit my details?
+  - intent: why_verify_identity
+    examples: |
+      - DO you know the reason for the identity check?
+      - Is getting my identity verified required before I can use my account?
+      - Is the identity check part of bank policy?
+      - Can I use my account before the identity verification is complete?
+      - Should I complete my security verification before I can use my account?
+      - Can I still use my account without verifying my identity?
+      - Can I use my account although my identity verification has yet to pass?
+      - Can I use my account before my Identity verification has passed?
+      - If my identy verifacation hasn't gone through can I use my account?
+      - Is it really necessary to verify my Identity?
+      - Can I use my account now, even though my identity verification has not gone through yet?
+      - My ID verification hasn't gone through yet, but can I use my account anyway?
+      - do I need to verify my identity before I can use my card?
+      - Can I go ahead and use my account even though my identify hasn't been verified yet?
+      - Do you think you're asking for too much information about me?
+      - Is identity verification required for me to use my account?
+      - Can I use my account although the identity verification has not been accepted yet?
+      - I still want to use my account but haven't verified is that OK?
+      - Is my account accessible even though my verification of my identity has not passed yet?
+      - Can I make transfers before my identity verification?
+      - Can I use my account even though the identity verification has not passed yet?
+      - I am still waiting for verification.  Can I use my account before I am verified?
+      - Am I able to use my account if the identity verification is not complete?
+      - Is it possible to go ahead and log in, although I have not been confirmed yet?
+      - can I use my card before identity verification?
+      - Can I use my account without verifying identity?
+      - Do i have to verify who I am?
+      - Do you need to know my first and last name?
+      - Can I already use my account although the identity verification has not passed yet?
+      - Is there anyway to bypass identity verification?
+      - My identity hasn't been verified.  Can I use my account?
+      - My Identity verification hasn't passed yet is it possible to use my account?
+      - Can we skip verifying?
+      - I'm waiting for the ID verification to go through still, so is it too soon to use my account?
+      - I keep being asked to verify my identity. Is this normal?
+      - Do you need my birthdate?
+      - Is verifying my identify important?
+      - Can i make transactions before identity verification?
+  - intent: unable_to_verify_identity
+    examples: |
+      - Can you help me with proving my identity?
+      - Are there any reasons that my identity wouldn't be accepted even though everything I've provided is factual?
+  - intent: get_physical_card
+    examples: |
+      - Is my PIN sent separably?
+      - Do I have a card PIN?
+      - I haven't received my PIN yet. Do I need to get it from you?
+      - Does the PIN come under separate cover?
+      - Is the PIN separately delivered?
+      - Is the PIN sent in another message?
+      - Do you deliver the PIN separately?
+      - Is my PIN the same thing as my passcode?
+      - Can you deliver the PIN separately?
+  - intent: visa_or_mastercard
+    examples: |
+      - Is there a way I can have a mastercard?
+      - is it just visa or can i also use mastercard?
+      - I prefer using Mastercard, can I substitute?
+      - Will my card be a MasterCard or a Visa?
+      - Is it possible to get a Visa and Mastercard from you?
+      - Do I get  a mastercard and visa?
+      - Can you send me a Mastercard, instead of a Visa?
+      - Can I pick between Visa and Mastercard?
+      - I have a Visa and Mastercard, can I use these?
+      - Can you issue both a Visa and a Mastercard to me?
+      - Is there a way I can get a Visa card?
+      - Can I get the Mastercard?
+      - Do I have a Visa card as an option?
+      - would a visa or mastercard be more suited to me?
+      - I am interested in a Visa or Mastercard. Do you offer them?
+      - Do I have a choice for a Mastercard?
+      - Can I choose from either Visa or Mastercard?
+      - Can I have a Visa card?
+      - Would I get a Visa or Mastercard?
+      - Am I able to get both a Visa and MasterCard from you?
+      - Is it possible to get both a Visa and a Mastercard?
+      - Can I choose my Visa or Mastercard?
+      - Can I choose whether I receive a Visa or a Mastercard card?
+      - Can I get a Visa or Mastercard?
+      - Do you give out Visa or Mastercards?
+      - Do I have to pick a creditcard brand?
+      - Visa or Mastercard?
+      - Can both Visa and Mastercard be chosen?
+      - Do you let me choose between Visa and Mastercard?
+      - Does it matter if I use Visa or Mastercard?
+      - Can both a Visa and Mastercard be received from you?
+      - I would like to get both a Visa and MasterCard?
+      - Would you give me a mastercard and visa?
+      - I want to get a Visa and Mastercard, is it possible to get both from you?
+      - Are you Visa or Mastercard?
+      - Can I select my card scheme or do you choose it for me?
+      - Will the card be a Mastercard or a Visa?
+      - Can I choose my card scheme?
+      - Visa and Mastercard can both be received from you?
+      - Can I choose between Mastercard and Visa?
+      - I prefer Visa, can I get that instead?
+      - Will I be able to get both a visa and a mastercard?
+      - Will I get Visa or MasterCard?
+      - Visa and MasterCard, can I get them both?
+      - Can I choose between Visa or MasterCard?
+      - Do you take both Visa and Mastercard?
+      - Could I get a MasterCard and Visa from you?
+      - Is it possible to get both Visa and Mastercard from you?
+      - Can I get both a Visa and a Mastercard from you?
+      - Do you accept Visa or Mastercard?
+      - Is it possible to obtain both a Visa and a Mastercard from you?
+      - Will I get a Visa card or Mastercard?
+      - Can I get a Visa instead of a MasterCard?
+      - Please give me both Visa and MasterCard, is it possible?
+      - Do I get Visa or Mastercard?
+      - Can I use a Visa or Mastercard?
+      - Can I choose between Visa and Mastercard?
+      - Is it possible to get both Mastercard and Visa card from you?
+      - Can I have a mastercard?
+      - Do I have an option between Visa and MasterCard?
+      - Can I get a Visa from you?
+      - Can you make sure I get a MasterCard and not a Visa?
+      - Will I get a visa or Mastercard?
+      - Will you guys do Visa or Mastercard?
+      - Do you only use Visa or do you have Mastercard too?
+      - Can I get a Visa card?
+      - Is it acceptable to use either Visa or Mastercard?
+      - Please tell me, do you use Visa or Mastercard?
+      - Do you supply both Visa and Mastercard?
+  - intent: topping_up_by_card
+    examples: |
+      - I tried topping up using my card, but the money is gone?
+      - Can my friends top up my account?
+      - Is my account able to be topped up by my friends?
+      - Can anyone else top-up for me?
+      - Can I get my friends to add money to my account?
+      - Is it possible to top up by card?
+      - Hoe do i use my credit card to transfer money?
+      - I attempted to top up using my card, but now the money just disappeared?
+      - Can I let other people have access to my account in order to top up?
+      - Can i top up by card?
+      - Is it simple to transfer money using my credit card?
+      - Can a credit card be used to transfer money?
+      - Is it possible to transfer money to my credit card?
+      - top up by my card is that possible?
+      - Is it possible for friends to top up my account?
+      - Can I allow other people to top up my account?
+      - I tried to top off using the card, but the money just disappeared?
+      - Can I add other people to my account, so they can top up?
+      - Can my account be topped up by my friends?
+      - Am I the only one who can top-up my account?
+      - Can friends I have top-up my account?
+      - If I want a friend to top off my account, can they?
+      - Can somebody else top up my account?
+      - Who can have access to top up my account?
+      - Do i have to top-up with my credit card before I can transfer?
+      - I need to transfer some money, can I use my credit card?
+      - Can other people top up my account?
+  - intent: disposable_card_limits
+    examples: |
+      - Do the disposable cards have any restrictions on them?
+      - Can I have more disposable cards?
+      - Do the disposable cards have a transaction limit?
+      - Can you give me the restrictions of the disposable cards?
+      - Is there a limit on the number of times I can use a disposable card?
+      - Is there a limit to the number of disposable cards I can have?
+      - Can I have more than 2 disposable cards?
+      - Are there any limits to using disposable virtual cards?
+      - Are there a certain amount of transactions i can do with one disposable card?
+      - Can you tell me the restrictions for the disposable cards?
+      - Could you tell me about the restrictions that are on the disposable cards?
+      - Do the disposable cards have any restrictions?
+      - Is there any limits I should know about if I'm going to use a disposable virtual card?
+      - Are there restrictions on disposable virtual cards?
+      - Am I limited on the amount of disposable cards I can possess?
+      - Is it possible to have more than one disposable card?
+      - Can i make several disposable cardsper day?
+      - Are there any limits if I use these virtual cards?
+      - Are there any restrictions for the disposable cards that I need to be aware of?
+      - Is there a limit to a disposable virtual card?
+      - Are there downsides to using a disposable virtual cards?
+      - Is there a transaction limit for a disposable card?
+      - Are there limits on the virtual cards?
+      - Can you tell me more about limits to disposable virtual cards?
+      - Can you tell me if there are limits to disposable virtual cards?
+      - Are there any restrictions for the disposable cards?
+      - Is there a limit on making disposable cards?
+      - Do the disposable cards have restrictions?
+      - Can I do more than 10 transactions with a disposable card?
+      - Is there a limit to using a disposable virtual card?
+      - Are there any places that I can't use the disposable cards at?
+      - Is there a limit to the number of disposable cards per day?
+      - Is there a limit on disposable cards?
+      - Are there any restrictions on the disposable cards?
+      - On my disposable card, is there a transaction limit?
+      - Who can request disposable cards?
+      - Is there a transaction limit on a disposable card?
+  - intent: compromised_card
+    examples: |
+      - I don't recognize some transactions.  Is someone else using it?
+      - Someone has been using my card. There are unfamiliar transactions on there. Can you freeze the card to keep this from happening?
+      - Can you check about unauthorized use of my card, I think someone is using mine without my knowledge?
+      - I noticed my card was used in a small town that I have never been to. Can you stop the card from being used more?
+      - There are fraudulent charges that I didn't make on my card. Can you please put in the safeguards necessary to stop this from happening anymore?
+      - I didn't make these transactions. Is someone else using my card?
+  - intent: atm_support
+    examples: |
+      - Can I use the card at any cash machine?
+      - Do all ATMs accept this card?
+      - Will this card work at any ATM?
+      - Do I have to use a bank approved ATM to withdraw money?
+      - Can I use this card at any ATM?
+      - Can I use my card to withdraw from my account?
+      - Are there specific ATM's that I can draw money from?
+      - Is there a way to find an ATM around me?
+      - Can I use my card at an ATM?
+      - Can I get money out of any machine?
+      - Is the closest ATM to me within 2 miles?
+      - Can I use my card in another institutions ATM?
+      - Can I use a different bank ATM than my own?
+      - Is there a list of ATMs that take this card?
+      - Is there a Mastercard ATM nearby?
+      - Can this card be used at all ATMs?
+      - Are there any ATM's near me that accept this card?
+      - Is this card accepted by ATMs?
+      - Can you tell me the ATMs I can use with my card?
+      - Are there specific ATM's I can use with this card?
+      - Can I withdraw from any ATM?
+  - intent: direct_debit_payment_not_recognised
+    examples: |
+      - Is there a strict timeline regarding disputing transactions made on my account? I just noticed a fraudulent charge on a statement from a couple months ago.
+      - I was just going over my transactions for the past couple of months and noticed a large type charge that I know I did not make. Even though it's been a while can I please still dispute this?
+      - There was a charge made on my card from a couple weeks ago and I don't remember making the purchase. Nor do I remember the company itself. Can we trace this at all to confirm if I did it or not?
+      - Could I raise a dispute for a large payment that i found out was not done by me in my couple of last statements? I am aware its delayed now. Please help me out.
+      - I'm checking my statements and I saw a purchase from a couple weeks ago that I don't recall at all. Not only that, but I don't even know the business that charged it. I'm not sure if I did it or not, but can we check it and see if we can trace it back to make certain?
+      - I just noticed that I supposedly made a payment to a seller a while back. The problem is, I don't recognize the seller. There must be a way to see who it is or track the payment. Can you do that, because I don't remember this transaction?
+      - I think I am a victim of fraud.  I noticed there was a charge on my account that I didn't do because I haven't touched my card today.  Can you please reverse the charge and refund my money?
+      - Am I able to look back at a transaction to see who with drawled some money from my account? I don't remember authorizing this a few weeks ago, but wanted to double check who took the money.
+      - I notice a transaction a couple of weeks ago in my account, from a seller that I don't recognize. Is there a way we can trace back the information to make sure it was truly something I did?
+      - I saw money was taken out of my account by a seller a while back. I do not recognize the seller, but I'm pretty certain I didn't make that payment. Can you track who the seller is?
+      - I don't recognize this debit transaction in my billing statement?
+      - I just went through a old statement and noticed that a very large payment went through and i did not make it. It was from a few months ago, can I still dispute the payment?
+      - I have gone through my statements and noticed there is a large payment that I did not make. Can i still dispute the payment? its been a while
+      - Purchases I did not make are appearing in my bank statement?
+      - after going over my transactions for the last couple of months I noticed a pretty large charge that I know I did not make. I know it's been a while but can I still dispute this charge?
+      - Can I dispute a debit payment that I am seeing that I didn't make from a couple of months ago?
+      - A couple weeks ago there was a debit taken from my account from a transaction I don't recall. Is it possible to trace this transaction to make sure I'm not being scammed?
+      - I just found a payment from a while back in my account that I didn't make.  Can I still dispute it even though it was a couple of months ago?
+      - looking back on my transactions from a couple of months ago I have noticed a charge that is fairly large that I'm certain was not completed by me. I know it has been a while but can I please dispute this charge?
+      - I know this very late, but I just went through my statements from the last couple months and there's one quite large-ish payment that I definitely haven't made. Is it still possible to dispute it?
+      - I checked my account and see that funds were deducted from a seller I didn't approve of. Can you help me understand?
+  - intent: passcode_forgotten
+    examples: |
+      - Is there a way to recover my password?
+      - Can you lookup my password?
+      - I've forgotten my passcode. Can I reset?
+      - Can you help me reset my passcode? I forgot it.
+      - Is there a way to reset the passcode?
+      - I don't remember my passcode?
+      - Can you tell me my code to get into the app?
+      - I cannot remember my passcode, is there a way to retrieve it?
+      - Can my password be reset if I do not have it?
+      - Disaster, I've totally forgotten my passcode, can you help me?
+      - I tried entering my passcode and it isn't working. Can you help?
+      - Can I reset the passcode?
+      - Are there directions to get a new passcode if I forgot mine?
+      - I can't remember my app code, can you reset it?
+      - Can someone help with my passcode?
+  - intent: declined_cash_withdrawal
+    examples: |
+      - I tried to use my card to withdrawal money from the ATM in Notting Hill but it didn't work. This is the first time I've tried using it. Is my card working?
+      - I can't get money out of the ATM. Is my card actually working? It's the first time I tried using it
+      - The ATM keeps declining my Transaction . I tried two different ATMs already Would you please check if everything is okay with my account?
+      - Is there a reason my cash withdrawal was declined?
+      - The ATM keeps declining my card! I tried two different ATMs already can you please check if everything is alright with my account??
+      - Is my card broken? I can't get cash out of the ATM
+      - I went to the Notting Hill ATM to use my card the first time for a cash withdrawal but it didn't work. Does this mean that my card isn't working yet?
+      - The ATM keeps declining my Transaction . I tried two different ATMs already can you please check if everything is okay with my account?
+      - Is my card working? It's the first time I tried using it I tried to get money out of an ATM, but got nothing.
+      - I have tried using my card for the first time at the ATM of Notting Hill to withdrawal cash but it didn't work. Does this mean my card isn't working?
+      - I tried to get money out of the Notting Hill ATM earlier, but wasn't able to. Is my card working okay? It's the first time I tried using it.
+      - Is my card actually working? It's the first time I tried using it
+      - Is the ATM broken? I can't get cash from it.
+      - My card has been declined by two separate ATM, and I'm worried something is wrong with my account. Would you please see if my account is okay?
+      - Has my account been frozen?  I tried to use my card but the ATM would not dispense cash.
+      - I tried using my ATM card at your Notting Hill location today.  It did not work.  Am I doing something wrong?
+      - I tried to get money out of an ATM in Notting Hill earlier, but it didn't work. Is my card actually working? It's the first time I tried using it
+      - Is there something wrong with my ATM Card?  Tried using it earlier and it did not work.
+      - The ATM keeps rejecting my Payment. I tried two different ATMs but did not work .Can you please check if everything is okay with my account?
+      - I tried to get money out of the Notting Hill ATM earlier, but I wasn't able to get it to work. Is my card with issue? It's the first time I tried using it.
+      - Hello, is there any way to double check my card? I have never had issues with withdraws in the past, but this morning on the way to work it was unexpectedly declined.
+      - My card didn't work at the ATM in Notting Hill.  Is my card working?
+      - Would you please check my Card. As Withdrawal was working fine so far, but this morning suddenly got declined. Can you please check the problem?
+      - I tried to get money out of the Notting Hill ATM earlier, but I wasn't able to get anything out. Is there a problem with my card? It's the first time I tried using it.
+      - ATM apparently not working?  Couldn't access funds in my account?
+      - Is there something wrong with the ATM? It would not let me pull cash out of my account.
+      - Please check my Card. As Withdrawal was working fine so far, but this morning suddenly got declined. Can you please check the problem?
+  - intent: pending_card_payment
+    examples: |
+      - Is there a problem with the payment that I see is still pending?
+      - Is there a reason my payments are pending?
+      - Is there a reason my payment is still pending?
+      - Is there something wrong with my card payment? It's been pending a really, really long time.
+  - intent: lost_or_stolen_phone
+    examples: |
+      - I think I lost my phone.  Is there a way to prevent anyone from getting into my account on it?
+      - Can I use the app without my phone?
+      - If my phone was stolen, do I need to do anything?
+      - I lost my phone. Can I use my card without the app?
+      - Can someone else use my account if they have my phone?  I lost mine.
+      - I'm currently not in possession of my phone, is it still possible to go about things normally without access to the app?
+      - I lost my phone. Can I disable to app?
+      - Is there something that I can do since my phone was stolen yesterday?
+      - Can my account me accessed by a thief?  I was mugged.
+      - I misplaced my phone so I can't use the app! Does this mean I can't use my card?
+      - My phone was stolen yesterday, can you help me with this?
+      - Can I use your services without access to the app?
+      - My phone was left behind.  Can I still use my card?
+      - I just replaced my phone so do I have to make a new account?
+      - Is there anything to do because my phone was stolen?
+      - Can I still access the app even though my phone was stolen?
+      - Do I need my phone to use the app?
+      - My phone was taken yesterday, is there something that I need to do?
+      - If I lost my phone at the hotel, can I still use the app?
+      - Do I need to do anything? My phone was stolen yesterday.
+  - intent: request_refund
+    examples: |
+      - Can i cancel this purchase?
+      - I want to return an item for a refund can I do that?
+      - do you offer refunds? i would like to return purchase.
+      - I need to cancel a purchase?
+      - If I bought something I didn't like, can I get a refund?
+      - My package is taking too long to arrive and I don't want it anymore. Can I get a refund?
+      - I received the wrong color and size, can I return it?
+      - Is it possible to get a refund?
+      - Can I get an item refunded?
+      - Can you please assist on my item that needs to be refunded?
+      - Can you please refund my item?
+      - Hey, I ordered a thing but changed my mind and want a refund on it. Since I haven't received the thing, would you just go ahead and cancel the payment for me?
+      - Can I receive a refund for an item I purchased?
+      - Is it possible to have an item refunded?
+      - I bought something and want the money refunded can I get some help with that?
+      - Can I get a refund on an item?
+      - Can i have the item refunded?
+      - Do you give refunds?
+      - I don't want to buy this car anymore, can I cancel the transaction and get a quick refund back?
+      - I'd like to get a refund for something I bought, is that possible?
+      - I changed my mind on something I purchased through you and I need the transaction canceled and a refund as soon as possible. Can you help me please?
+      - is it possible to get a refund for something I purchased?
+      - I need to refund my item, can you please help?
+      - Do you have a return policy?
+      - the product is not working, can I get a refund?
+      - Can I return an item?
+      - Can you refund my purchase?
+      - I just bought an item and would like to stop payment, is this possible?  The item has not been received yet.
+      - Hello, I have recently made a purchase and have decided to cancel my purchase. Is there any way that you can cancel that transaction for me so I can get the money back? It's very important.
+      - Are purchases returnable for full refund?
+      - Is it possible to get a refund for the item?
+      - Can you help me process a refund?
+      - Is it possible to refund an item?
+      - I just bought an item and would like to stop payment can you tell me if the item has been sent yet?
+      - Can I get my money back on an item?
+      - Can I get a refund?
+      - Can I have a refund for one of your products?
+      - Can I exchange an item for a refund?
+      - I want to have an item refunded can I do that?
+      - Can you explain your refund policy, please?
+      - I no longer want this can i cancel my purchase?
+  - intent: declined_transfer
+    examples: |
+      - I have transfered to my account before but it is being declined now?
+      - I can't make any transfers, they won't go through, the details are correct as I checked them.  Can you look in to this please?
+      - Is there a reason my transfer would have been declined?
+      - I have a problem with my account. I tried to transfer some funds and the message came back declined. Can you help me?
+  - intent: Refund_not_showing_up
+    examples: |
+      - I requested a refund from a merchant but don't see the money in my account.  Are you able to check with the merchant or process the refund manually?
+      - who should i contact if my refund doesn't go through?
+      - I requested a refund for a large order the other day and don't think I received the funds. Can you tell me if you see them or not?
+      - I am noticing that a refund of a large purchase still has not been credited to my account. I contacted the merchant a few days ago and he assured me that he would submit it right away. Is there a status update?
+      - Hi I'm waiting for a refund for an item I bought. I have contacted the merchant directly but had nothing back. Can you tell me whether or not you are able to refund me for the item?
+      - Can I check my recent refund in my statement?
+      - Hello. Please, would you tell me if you have or have not received funds for a refund that I recently requested for a big purchase? I've contacted the merchant, but I can't tell that they have taken any action on it.
+      - Did I not get my refund? I don't see it.
+      - i need a refund from you because the merchant is refusing, can you do that?
+      - I returned an item but don't see it on my account?
+      - Are the funds I requested from a merchant a few days ago in my account? I do not see them.
+      - Can you tell me if a credit/refund is coming from a seller? I asked for refund directly from them and am still waiting. It's been a week now and i still havn't seen my refund yet.
+      - Im not sure if a seller is giving me my money back! I asked them to refund my money for the item but It's been a week now and still nothing has been given back to me. Can you resolve this for me?
+      - I made a big purchase that I regretted and cancelled, the merchant said that my refund was submitted. Can you confirm to me that all of my money was truly returned to me?
+  - intent: declined_card_payment
+    examples: |
+      - Hi, is everything in good standing with my card? I am receiving multiple "decline" messages.
+      - My payment has been declined several times.  Can you help me?
+      - Can you please advise if there is something wrong with my card? I have had multiple rejections and do not know the reason. Thanks!
+      - I had a problem with my card payment, can you help?
+  - intent: pending_transfer
+    examples: |
+      - Will my transfer be done soon?
+      - Hey I double checked that I have the correct account details already, they're right for sure. Transfer is still pending since forever. It's not that difficult to transfer money to another country in 2018 is it?
+      - Is my transfer pending?
+      - Do EU transfers happen quickly? I purchased something a few days ago and the seller hasn't received my money yet.
+  - intent: terminate_account
+    examples: |
+      - Are you able to delete my account?
+      - Can you delete the account?
+      - I hate this company! Can you delete my account?
+      - I'm not happy with the services I'm getting with this company. Can you please delete my account?
+      - Can you close my account please?
+      - Is it possible to delete the account?
+  - intent: card_swallowed
+    examples: |
+      - My card is stuck in the ATM?
+      - Who do I talk to about the ATM swallowing my card?
+  - intent: transaction_charged_twice
+    examples: |
+      - I was charged twice for a restaurant, can you take the second charge off?
+      - Hi, I just looked at my card transactions and saw that I've been charged twice for a restaurant I went to this week. Can you remove the double charge, please?
+      - I was double charged at a restaurant can you take the second charge off?
+      - Who do I talk to for transactions debited twice?
+      - I have been charged twice this week for a couple of things on my card. Can you please check this out for me and return the double charged items back?
+      - Looks like my card payment was duplicated after all. I went to pay at the store earlier, got declined once, second time it works. App still stays pending for one of the payments. Can you please remove one of them as it's wrong and clearly was declined?
+      - Hello, I just checked my card transactions and saw that I was charged twice for a restaurant visit I did earlier this week. Is it possible to remove one of them and get my false paid money pack?
+      - Hello. I checked my transactions and saw I was double charged for a restaurant visit. Can I get my money back?
+      - Hi, I was looking over my card receipts for the past week and I realize I had a charge put through two times for the same single restaurant visit. Can one of the charges be removed so that I can get the money back that was mistakenly taken from my account?
+      - Hi, I was just checking over my card transactions and notice I was charged twice for a restaurant visit this week. Can you please remove one of these false charges from my account?
+      - Hello, I was just went through my recent transaction on my bank account and I just noticed that I was charged twice at a place that ate at this past week. Can I get that second transaction removed from my account?
+      - After taking over my card transactions I noticed that was charged twice for a restaurant purchased from earlier this week. Can you please remove one of these transactions from my account since it is not accurate?
+      - Looks like my card payment was duplicated after all. I went to pay at the store earlier, got declined once,second time it works. App still stays pending for one of the payments. Can you remove one of them as it's wrong and clearly was declined?
+      - Hi. Please can you help me fix a double charge on my card? I'm looking at my transactions and this restaurant I went to earlier in the week has charged me twice! Please remove the additional charge for me.
+      - It seems my card payment was completed twice. I paid at the store previously and the first one did not seem to go through. After a second attempt, it did go through. I now see within the app that I have been charged twice with one of them pending. Can you please remove the pending amount because it is clearly something that was declined?
+      - I went for a meal in Seattle and paid the bill but I think they charged me twice, the first time they swiped the card I got a notification to say the money had gone out the account but then I added a tip and I think they swiped it all again. Can you refund one of the charges?
+      - Looks like my card payment was duplicated after all. I went to pay at the store earlier, got declined once,second time it works. App still stays pending for one of the payments. Can you please remove one of them as it's wrong and was declined?
+      - Hello. I just noticed I was charged two times for a restaurant I visited this week. Can you reverse the additional charge?
+  - intent: verify_source_of_funds
+    examples: |
+      - who can put money in my account?
+      - Can I see the source of my available money?
+      - Who is giving me my money?
+      - Is there a way for me to check my balance?
+      - Can I track history on funds?
+      - Can I see my available money?
+      - Is there a way to see my money's source?
+      - can i see money source?
+      - is there a way i can see source of money?
+  - intent: transfer_timing
+    examples: |
+  - intent: reverted_card_payment?
+    examples: |
+      - Is it on purpose that my payment has been returned to my account?
+      - I made a payment with my card that was cancelled?
+      - Hello,  I noticed the money for an item I purchased online and have already received has been returned to my checking account. Was there an issue with the merchant accepting my payment? Or, possibly, with the bank sending it?
+      - Is my card payment reverted?
+      - Ive been trying to use my card for two weeks now to purchase somethings online but nothing is going through. It keeps returning my payment to my account. There shouldn't be anything wrong with my account, is it the card?
+      - I bought something and received it, but the payment went back to my account. Is the seller okay?
+      - I just found out from the seller that my money didn't go through. I checked my account and it was deducted at first but now it's back in my account. Can you  please fix this for me quickly?
+      - I've got a weird problem: I purchased something a week or maybe it was two weeks ago, and the funds have come back into my account! Can you explain this?
+      - Did a card payment that I made get cancelled?
+      - I think a card payment I made was cancelled, can you check?
+      - Is it possible that my card payment was reverted?
+  - intent: change_pin
+    examples: |
+      - Is it possible for me to change my PIN number?
+      - Can I change my PIN at any cash machines?
+      - Can I change my PIN abroad?
+      - Do I have to go to the bank to change my PIN?
+      - If I want to can I set up a new PIN?
+      - Do I have to go into the bank to change my PIN?
+      - Can I change my PIN at my local bank?
+      - Do I need to speak to a representative to change my pin?
+      - Can I pick a new PIN?
+      - Can I change my PIN remotely?
+      - If i want to change my pin number can I directly from an ATM?
+      - Are there any specific cash machines that I have to go to in order to change my PIN?
+      - Can I change my PIN at any ATM?
+      - Can I change my pin at an atm?
+      - Can I change my PIN without being physically present?
+      - Is there a way yo change my PIN?
+      - Can I change my PIN?
+      - Do I need to go to a physical bank to change my PIN?
+      - Do I need to go to an office to change my pin?
+      - Can I change my PIN without going to a bank?
+      - Can my PIN changed remotely without visiting a bank?
+      - Can I change my pin through the app?
+      - Can I change my PIN in Austria?
+      - Can I change my in at all ATM's?
+      - Do I have to change my PIN at a bank?
+      - Can I change my PIN on my phone?
+      - I want to change my PIN - do I need to be in a bank?
+      - Can I change my pin at a cash machine?
+      - Is it possible to change my PIN?
+      - Is going to a bank only way to change my PIN?
+      - Is it possible to change my pin if i am out of the country?
+      - I think someone saw my PIN and I am on vacation in Spain, can I change it locally at an ATM?
+      - While on vacation in Spain I think someone saw my PIN and I now need to change it, can I do this at an ATM in Spain?
+      - I'm on vacation in Europe but I desperately need to change my PIN. Can I do this from abroad?
+      - Can I reset my PIN?
+      - I want to change my pin number from an ATM. Is this possible?
+      - I'm in Austria right now, but I really need to change my PIN right now. Can I do this even though I'm in another country?
+      - 
+      Do I need to go to a physical bank to change my PIN?
+      - May I change my PIN?
+      - Can I change my PIN online?
+      - Can I get a new pin number at any ATM using my card?
+      - Can I change my PIN without going to a bank branch?
+      - Can my PIN be changed in any cash machine?
+      - Can I change my PIN if I want to?
+      - Do I have to go to an actual bank to change my PIN?
+      - Can I change my card PIN?
+      - Is there a way to change my PIN without having to go to the bank?
+      - Can I change my PIN on holiday?
+      - Can I change my pin number at a cash machine?
+  - intent: beneficiary_not_allowed
+    examples: |
+      - Is there something wrong with the transferring functions? I keep trying to transfer funds and only get an error message.
+      - I'm trying to purchase crypto via the app. I haven't been able to get it to go through. Am I doing something wrong?
+      - Are there restrictions to transfers to certain accounts?
+      - My attempted transfer keeps kicking back with an error message.  Could you please help me to resolve this?
+      - I have been trying to exchange this for crypto but the app won't work could you please help me?
+      - I could not transfer funds to a beneficiary; is there a problem with your software?
+      - Hi,  Is there any problem with app? As i am facing some issues with the exchange of crypto currency. I am extremely interested in buying.
+      - is a transfer to a beneficiary allowed?
+  - intent: transfer_fee_charged
+    examples: |
+      - Is there a fee that comes with transfers?
+      - I found a transfer fee - is that correct?
+      - I bought something online and it says there was a fee to transfer money. Isn't that free?
+      - Does transferring money have a fee?
+      - I thought I can make transfers for free, this is not fair. I bought something online from abroad and there was some weird additional fee that I've never seen before?
+      - Is it normal to see a fee for transferring money?
+      - Is there a money transfer fee?
+      - Are money transfers free?
+      - Someone that I had to send money to told me that they didn't receive the full amount I sent them - can you look into this?
+      - Are transfers not free? I didn't know I would be charged for transfers.
+      - I used this account a lot during the last month to manage my payments for my new place abroad. Seems that suddenly fees have increased? Shouldn't you instead reward your frequent customers instead of putting an additional fee suddenly?!
+      - I have used this account overseas recently. Has there been an increase in fees that I am unaware of?
+      - Is it free to transfer money or is there a fee?
+      - Can you explain the transfer fee that I was charged?
+      - Does it cost anything to buy something from another country? Like is there going to be hidden transfer fees or currency conversion fees?
+      - Is it right that I've been charged for transferring money?
+  - intent: receiving_money
+    examples: |
+      - Can my salary be received here?
+      - Salary in GBP has been received. Does it need to be configured into another place?
+      - I am paid by my employer in GBP; do I need to do anything in the app to indicate this?
+      - Can I receive my salary with this in another currency?
+      - Can i receive transfers from my employer to this account?
+      - am i able to receive my salary this way?
+      - Can I directly deposit my salary to this account?
+      - My salary is deposited in GBP. Do I need to choose the currency?
+      - Can I transfer my payroll to the bank?
+      - Can i receive transfers from my employer this way?
+      - Can my friend send me money if it is not in US dollars?
+      - Is it possible for a friend to personally send me a payment?
+      - Can I receive payments in another currency?
+      - Can I receive money in a different countries money?
+      - Can I transfer my salary if its in GBP?
+      - Can my friend send me money?
+      - My salary is in GBP, do I need to exchange it before putting it into my account?
+      - Do I need to convert my currency from GBP before transferring?
+      - Is it ok for a friend to send me money?
+      - My friend wants to send me money, can she?
+      - Can I get paid for this in another currency?
+      - Can I use my salary for this?
+      - Can I transfer money using a different currency?
+      - Can I have a friend send money directly to me?
+      - Can I transfer my salary onto here?
+      - Can this app take my salary?
+      - May I get my salary paid out in a different currency?
+      - I was wondering, Can I get my pay in another currency?
+      - Who can send me money?
+      - My salary is in GBP, is this something I need to configure?
+      - Can my salary be received and transferred to my current currency in my country?
+      - Can I transfer my paycheck to the account?
+      - Are there ways for other people to send me money?
+      - Is there any way to get my salary in a different currency?
+      - Can I receive payment in another currency?
+      - Can friends send me money?
+      - Can I use a transfer to receive my transfer?
+      - Can friends transfer money to each other?
+      - Do I need to do anything special for my friend to send money to my account?
+      - Do I need to add my salary?
+      - If my salary is in GBP, do I need to do something?
+      - Can I use a different currency with my salary?
+      - Do you support direct deposits from my employer?
+      - Can i get payed through this system?
+  - intent: failed_transfer
+    examples: |
+      - Is there a reason that my transfer failed?
+      - Transfer isn't working?
+      - I've been trying to do a transfer multiple times and have failed? Is the system down?
+      - My transfer failed to process correctly. Is there a reason this would happen?
+      - Can you help me transfer money into my friend's bank account? I tried to do it but it keeps rejecting me. I need to get the money in there asap. I have enough and all the account info is correct.
+      - Hi there, I've tried to make a transfer 5 different times and its not working. Is your system down or something?
+      - Is there a reason my transfer failed?
+      - Hello. I'm trying to transfer some money to a friend but it keeps getting rejected. can you help me?
+      - The transfer keeps rejected, I tried to transfer some money to friends but it keeps getting rejected for some reason, Would you please check the issue?
+      - The transfer keeps failing , I tried to transfer some money to friends this morning but it keeps getting rejected for some reason, Would you please check the issue?
+      - I need help making this transfer. I keep getting an error. I'm trying to purchase a flat but i need my mortgage payment to go through first. Can you help?
+      - I'm trying to make a bank transfer but It's not going through. Could there not be enough funds to transfer or something? Have I done it too many times?
+      - I am unsuccessfully trying to make a transfer can you help?
+  - intent: transfer_into_account
+    examples: |
+      - I have an account that is empty of funds. Can I transfer some from another bank?
+      - Can I add money to my account via bank transfer?
+      - I need to add money to my account. Can I do so via bank transfer?
+      - Can I use my bank account to send me more money?
+      - Can you transfer money to your card by bank transfer?
+      - My account is devoid of funds. Am I permitted to submit additional money via bank transfer?
+      - Can I transfer money to my card via bank-transfer?
+      - Can I add money to top up my account via a bank transfer?
+      - Account topping up bank transfers to my account assistance please?
+      - I need more money in my account. Can I add more by transferring?
+      - I would like to top up my account with a bank transfer, is that allowed?
+      - I have zero dollars in my account. Can I submit additional funds via bank transfer?
+      - Is a bank transfer acceptable for topping up my account?
+      - I have no more money in my account.  Is there a way to do a bank transfer to put money into my account?
+      - Can I transfer money to my account with the app?
+      - Can I use a bank transfer to add money to my account?
+      - My account is depleted. Can I transfer funds from another bank?
+      - Can you please explain the topping up transfer process?
+      - Can I withdraw money from another bank and transfer it into my empty account?
+      - I am out of money in my account and I was wondering if I could do a bank transfer is put more in it?
+      - Can you help me transfer funds from another bank account to this account?
+  - intent: verify_top_up
+    examples: |
+      - Can you explain to me the way to verify my top up has gone through?
+      - Does the top-up need verified?
+      - Do I need to verify my top-up card?
+      - I'm trying to verify my top-up card, but I can't find the code...?
+      - Do I need to verify my top-up?
+      - Is there a way to verify a card top-up?
+      - Do I have to verify the top-up?
+      - Do I need to verify the top-up?
+      - Can I verify my top-up card?
+      - Do i need to verify my top up?
+  - intent: getting_spare_card
+    examples: |
+      - Are extra charges added for sending out additional cards?
+      - Is it possible to get a second card for my daughter?
+      - Can I get a few more physical cards?
+      - Is there a charge for sending out more cards?
+      - May I order another card?
+      - Can I order another card?
+      - Can I order a second card?
+      - Can I have more physical cards?
+      - Can I get more cards just incase?
+      - Do you charge for sending out more cards?
+      - Can I have a third card?
+      - I have left my card at my parents house. Can you send me a spare one please to use in the meantime?
+      - Can I get a second card for free?
+      - Can my daughter also have a card issued in her name, but linked to my account?
+      - Can I have a supplementary card?
+      - My daughter need a card from this account. Is that possible?
+      - My daughter would like a card from my account?  Can I do this?
+      - Are there any fees to get additional cards?
+      - Can you send me more cards for my account?
+      - Can I have a duplicate second card?
+      - I want to give a second card for this account to my daughter, would this be possible?
+      - Am I permitted to have a spare card?
+      - I was wondering if I could get a second card on this account? I would like my daughter to have one.
+      - Do I have to pay for a second card?
+      - Is it possible to order another card?
+      - Is there a charge for getting more cards?
+      - Can I have a second card issued to another family member?
+      - Do you send duplicate cards?
+      - I would like to use one of my cards for a family member. Is that allowed?
+      - Can another family member hold a card for this account in addition to mine?
+      - If I need an additional card, is there a fee for that?
+      - Does it cost extra to send out more than one card?
+      - Can I get spare cards?
+      - Is it possible to get another card?
+      - Is a new debit card free?
+      - If I want to send out more cards, do you charge extra for that?
+      - Do you charge extra for duplicate cards?
+      - Is it possible for me to give my daughter a second card for this account?
+      - Is there any way to get another card on the same account?
+      - Can I get another card?
+      - Is it free to send out more cards?
+      - Is it possible to purchase more physical cards with my account?
+      - Is there a fee for sending out more cards?
+      - Is there a fee for sending additional cards?
+      - Is it possible to have a second card?
+      - Do you send more than one card?
+      - Are extra cards free?
+      - Do you charge for sending more cards?
+      - Can I have another card in addition to my first one?
+      - I need a second card, can I have more than one?
+      - I want a backup second card. Is this possible?
+      - Can I have a spare card for this account please?
+      - I need two cards. Is this possible?
+      - Can I have more than one card?
+      - Is there any way I can get more physical cards to use with my account?
+      - Can I give a second card for this account to my daughter?
+      - Is it possible to give a second card from my account to my daughter?
+  - intent: top_up_by_cash_or_cheque
+    examples: |
+      - Do you have any options to top up with a cheque on my account?
+      - I can't find any option to top up with a cheque?
+      - Can I use a check to get gas?
+      - Can I deposit a check?
+      - Is there anyway to use a cheque to top up?
+      - Can I add money to my account with cash?
+      - Can I top up using cash?
+      - Can I mail in a check to top up?
+      - Do you take checks?
+      - Is there such thing as top up by cheque?
+      - Can I only top-up digitally? Or could I use cash?
+      - Who do I make a check out to if I want to top off my account?
+      - can i top up with check?
+      - Can I top-up by cheque?
+      - Can I top up using my cheque?
+      - Can I write a cheque to top up?
+      - Can cash be used in physical locations to top up?
+      - Is topping up with cash allowed?
+      - can i deposit a check here?
+      - Is it possible for me to top up with cash?
+      - Do you accept cheques for top-up?
+      - Is it possible to top up using a cheque?
+      - Can I use check to deposit?
+      - Is there an option to top up with a cheque?
+      - Is it possible for me to top up with a cheque?
+      - Am I able to top up with this cheque I received?
+      - Can I purchase with cash or cheque?
+      - Can I add to my account using a cheque?
+      - Is there a way to use a cheque to top up my account?
+      - Do you accept cash?
+      - May I transfer a cheque into my account?
+      - Can I use a check to top up?
+      - Are cheques accepted for a top up?
+      - Can I top up my balance with a cheque?
+      - Can I top up online?
+      - Can I top up my account with a check?
+      - Do you accept cheques for top ups?
+  - intent: order_physical_card
+    examples: |
+      - Can I request a card?
+      - Do I have to pay for a physical card?
+      - Are cards delivered to my location?
+      - Is it possible to get a physical card?
+      - Can you send me the actual card?
+      - Can I order a card please?
+      - Does it cost anyting to get my own card?
+      - Do physical cards cost money?
+      - Are physical card available?
+      - Is there a charge for a physical card?
+      - Is it possible to order a card?
+      - Is there a fee to get an actual card?
+      - Is there a fee for physical cards?
+      - Can I get a physical card for free, or is there a charge?
+      - Can I get a new card?
+      - Can I get a card in person?
+      - Can I order a card?
+      - Do I get a card to keep in my wallet?
+      - Is it possible to get a real card?
+      - Do I get an actual card?
+      - Is there a fee to order a physical card?
+      - Is payment required to get a card of my own?
+      - Do I get a real card?
+  - intent: virtual_card_not_working
+    examples: |
+      - Can I use my virtual card to complete transactions for memberships?
+      - My disposable virtual card wouldn't process my payment?
+      - Can I use my virtual card for recurring monthly payments?
+      - I have a disposable card but it does not work?
+  - intent: wrong_exchange_rate_for_cash_withdrawal
+    examples: |
+      - Can I make a withdraw in my home currency at an ATM? I'm on vacation and don't have cash with me. This is cause for a bit of concern. Is it possible to withdraw here without additional fees?
+      - Do any of your machines provide cash from my home country? I don't have any money on me and I'm on holiday so I'm concerned. Also, will I be charged anything to do this?
+      - Do you offer free ATM withdrawals of ones hometown currency while on holiday?
+      - Can i get money in my home currency at some ATM ? As I am on holiday and bit concerned because i do not have any cash with me . Is it possible to withdraw without any additional cost.
+      - Is there a fee associated with using foreign exchange ATMs?
+      - Can i get money back in my home currency at  ATM? As I am on holiday and bit concerned because i do not have any cash with me . Is it possible to withdraw without any additional cost.
+      - Can I withdraw money in my hometown currency while on holiday without any additional fees?
+      - Can the exchange rate change while I am in the process of making a withdrawal?
+      - Can I get money in my home currency at an ATM? I'm on vacation and don't have cash with me. This is cause for a bit of concern. Is it possible to withdraw here without additional cost?
+      - Can I make a withdraw in my home currency at an ATM? I'm on vacation and am a bit worried because I don't have cash with me. Is it possible to withdraw here without any additional costs or fees?
+      - Can i get money in my home currency at my ATM ?I am on holiday and bit concerned because i do not have any cash with me .Is it possible to withdraw without any additional cost.
+      - I'm looking for a machine of yours that will provide me cash from my home country. I went on holiday and don't have any cash on me. Will your machine charge me extra to do this?
+      - Can I get money in my home currency at some ATM? I'm on holiday and am a bit concerned because I don't have any cash with me, it is possible to withdraw here already without any additional cost?
+  - intent: get_disposable_virtual_card
+    examples: |
+      - Can you tell me about these disposable virtual cards?
+      - Do you offer disposable virtual cards too?
+      - Who can purchase a disposable virtual card?
+      - Do I need a disposable card?
+      - Is there a disposable virtual card?
+      - Can you please explain disposable virtual cards for me?
+      - Do you have the option for a disposable virtual card?
+      - I would like a disposable virtual card, could I get one?
+      - Please can i get a disposable virtual card as well?
+      - I need to get a disposable virtual card?
+      - Can I get a disposable virtual card?
+      - Can you tell me more info about virtual disposable cards?
+      - Are there any disposable virtual cards?
+      - Can you provide me a disposable virtual card?
+      - Can you help me get a disposable virtual card?
+      - Can I order a disposable virtual card?
+      - Are there virtual disposable cards?
+      - Is it possible to get a disposable virtual card as well?
+      - Can I use a disposable virtual card for any purchase?
+      - Is there a way to use this app with a disposable virtual card?
+      - Is there a disposable virtual card option?
+      - Am I able to order a disposable virtual card?
+      - Is there any way i get a disposable virtual card as well?
+  - intent: top_up_failed
+    examples: |
+      - My credit card was declined for top-up. Can you see if there is enough funds in my account?
+      - Hello, there was an error while attempting top-up with my card this morning. I was able to use the card two days ago with no issues. Could you please assist?
+      - I've been trying to transfer funds to top-up my card, but the transaction is not going through.  Is there something I'm doing wrong?
+      - My credit card did not go through. Can you see if it has insufficient funds?
+      - Can I tell if my top off didn't work?  It doesn't seem to have.
+      - I tried topping up my account but it failed, can you help me?
+      - I tried to top up with my card but it was declined. I was able to a couple days ago and it worked. Is something wrong? Can you check it for me please?
+      - I attempted to top-up with my card this morning, but the transaction was unsuccessful. I received the card two days ago and was successful using it previously. Could you please help me?
+      - I have been trying unsuccessfully to top-up my card.  Is the system down or not working properly?
+      - Hi I've been trying to top up my card for the past day but it gets declined, I need it topped up urgently! Can somebody get back to me to resolve this or explain any different ways I can top up my card?
+      - Hi, I am experiencing problems while trying to top-up with my card. I have never experienced any problems doing this before. Could you please help me?
+      - I need to add more funds to my card today because it keeps being declined, and I need to use it immediately. Can you fix this or tell me alternatives?
+      - I tried to charge my card but it was declined. A couple days ago I was able to charge it and it was accepted. Is something wrong? Will you double check for me please?
+      - I can't access my money. Is it because somethings wrong with the top-up? I set it up correctly.
+      - Hi, I tried to top up my card today and it did not work. I have tried it in the past and it worked just fine but it won't do it anymore. Can you help me out?
+  - intent: balance_not_updated_after_bank_transfer
+    examples: |
+      - About two days ago now, I made a transfer from France but it hasn't arrived yet. Is it possible that the international transfer just takes longer?
+      - Can you please check my UK Account to make sure everything went alright?  I made the transfer a couple of hours ago.
+      - I made a transfer from France two days ago now but there hasn't made it there yet. Do international transfers take longer?
+      - I just made a transfer from France 2 days ago. It has not yet reached my bank. Is it possible it takes longer because it was an international transfer?
+      - Im going to need to make a transfer from a UK account but I need it to go through ASAP. Is that going to be possible or will it take forever?? Im hoping it will be a couple hours and not a couple weeks.
+      - It is common for an international transfer to take 2 days or longer? I made a transfer from France 2 days ago and I have not seen it yet.
+      - Is there a longer processing time for international bank transfers?
+      - Hi, I made a transfer from France two days ago and thought it would be here by now. Can you give me an update please?
+      - Do international transfers take longer?? I made a transfer from France 2 days ago but it's still not there yet...
+      - I made a bank transfer earlier from my UK account.  I don't see it yet, can you check the status?
+      - I just transferred some money into my account and do not see it updated yet, can you assist?
+      - I made a bank transfer but it doesn't seem to have gone through?
+      - Transferred to account is not successful, help please?
+      - Can you see my new balance yet?
+      - Are bank transfers immediate?
+      - A few hours ago I made a bank transfer from my UK account but I don't see that it has arrived.   Can you check and see if all is ok please?
+      - It has been a couple of hours but I do not see my balance updated, can you help?
+  - intent: cash_withdrawal_not_recognised
+    examples: |
+      - A 500 pound cash withdrawal was just made from my account, but I didn't make it. I am pretty sure my card has been compromised - can you help me?
+      - I just lost my wallet and I think someone is using my card to withdraw my money. Can you please cancel or freeze my card?!!
+      - Somebody stole my wallet and is using my card! Can you do something so they can't keep taking my money?
+      - I think someone may have cloned my card or something.  My card isn't lost but I just saw a charge of $500 cash withdraw.  Can you help me?
+      - I hope you can help me. My account has been compromised from a different town that I haven't been to. Can you please place a hold on my account until I can make it to the bank?
+      - There has a recent suspicious withdrawal on my bank account. Is it possible to freeze my card?
+      - Someone is using my card to purchase flights to New York it's not me because I'm not going to New York, please can you cancel the card and refund the money?
+      - I think someone might have a copy of my card because a 500 dollar withdrawal was made, and it wasn't me. Can you please help?
+      - Someone stole my account, there's a withdrawal but it wasn't me, can we put a stop to it please?
+      - There has been an unusual withdrawal from my account, can you help?
+  - intent: exchange_charge
+    examples: |
+      - Are there any hidden extra fees for currency exchanges?
+      - If I exchange currencies on a frequent basis can I receive a discount?
+      - Is there any cost to change foreign money to local?
+      - Do you charge a fee on currency exchange?
+      - Does it cost extra to exchange foreign currencies?
+      - Is there any type of fee for currency exchange?
+      - Do I pay extra for exchange?
+      - Do I need to pay extra for exchanging currencies?
+      - IS there a fee to exchange currency?
+      - Do I get a discount if I exchange currencies a lot?
+      - Are there any discounts in exchanging currencies frequently?
+      - Do you offer any discounts for someone who exchanges currencies frequently?
+      - Is there a pay structure for currency exchanges?
+      - Are there any discounts for frequent currency exchanges?
+      - Since I need to exchange currencies frequently, would you be able to offer me a discount?
+      - always exchanging currencies, do you offer a discount?
+      - is there a foreign currencies charge?
+      - I exchange my currency quite a bit.  Do I get an exchange price break?
+      - If I exchange currencies on a regular basis, is there a discount?
+      - Do you charge extra for exchanging currencies?
+      - My currencies needed to be exchanged often and I was wondering if there were any discounts available for this?
+      - is there a frequent currency discount?
+      - Are there any extras for exchanging currency?
+      - I travel a lot, can I get a bulk currency exchange discount?
+      - Do exchanges cost more?
+      - Do currency exchanges cost extra?
+      - Is there an additional cost to exchange currencies?
+      - I've been to several different countries, can I exchange the cash with a discount for a large transaction?
+      - I exchange currencies a lot.  Can I get a discount?
+      - Is there a charge for exchanging foreign currencies?
+      - Is there a fee for currency exchange?
+      - If I exchange foreign currency, are there any other charges?
+      - Do yo charge a fee for exchanging foreign currencies?
+      - Are there discounts for frequent currency exchanges?
+      - Do you offer a discount for those who perform frequent currency exchanges?
+      - Is there a charge for exchanging foreign currency?
+      - If I exchange currency frequently, can I get a discounted rate?
+      - Can I have a discount if I exchange currency often?
+      - Is there a fee for exchanging currency?
+      - Does a discount apply if I exchange currencies frequently?
+      - If I exchange currencies frequently, is there a discount?
+      - Is there a few for exchanging foreign currencies?
+      - Do I get any sort of discount on volume for a lot fo currency exchanges?
+      - Are currency exchanges free?
+      - Does it cost anything to do currency exchanges?
+      - Is it free to exchange currency?
+      - If someone in a different country sends me money, do I have to pay a fee?
+      - Do I have to pay more for exchanges?
+      - Can I be charged for exchanging foreign currency?
+      - Would you be able to offer me a discount, since I need to exchange currencies frequently?
+      - Is it possible to have a discount for exchanging currency frequently?
+      - Is there an extra fee to exchange currencies?
+      - Do I need to pay more for exchanging currencies?
+      - Is there an additional charge to exchange currencies?
+      - Is there an extra charge to exchange different currencies?
+      - Is there a discount for multiple currency exchanges?
+      - Can you tell me about the exchange fee?
+  - intent: top_up_by_card_charge
+    examples: |
+      - Is there a charge for topping up by card?
+      - Does it cost money to top up?
+      - Do I have to pay extra if I use an international card to top up my account?
+      - Do you charge if I use a European bank card for top up?
+      - I need to top up, but I have to use an international card.  Is there a cost for that?
+      - I am wanting to refill my card, is there a charge?
+      - Is there a fee to add money to an international card?
+      - Does it cost to add money to my card?
+      - Do I get charged for a top up from a European bank?
+      - Are their fee's for top ups?
+      - Does it cost to top up my card?
+      - Are there any charges for European bank card for top up?
+      - Are there still fees for european top-ups?
+      - If I top up using a European card is there a charge?
+      - Do you charge extra for topping up with a debit or credit card?
+      - Is there a fee for european bank cards?
+      - Is there a top charge for US cards?
+      - Are there going to be fees from adding money with an international card?
+      - Does it cost anything to top up?
+      - Are there any charges for topping up a US-issued card?
+      - Is there a fee to top up a US card using a debit or credit card?
+      - Do I get charged if I top up with my European bank card?
+      - Are you going to charge me to top up my card?
+      - Are there top up charges for US cards?
+      - Do you charge a fee for adding money in USD?
+      - Are there fees for using an international card to top up?
+      - I topped off my card is that something you will charge me for?
+      - Can I top up for free using a European card?
+      - Is topping up free?
+      - Is USD free to top up with a US card?
+      - Is it free for top ups?
+      - Is there a charge to use a Top up card in the US?
+      - Are there any charges for topping up my card?
+      - Is there a top-up fee if you add money in USD?
+      - Is there a fee for topping off a US card?
+      - Do you charge a fee for topping up a card?
+      - Do you have any card fees if I want to add money using an international card?
+      - Is there a fee for topping up a card?
+      - Is there any fees for top ups?
+      - Can I get information on topping up?
+      - Is there a fee for topping up by charge card?
+      - Are there any charges for top ups?
+      - Is there a charge for using an European bank card for top up?
+      - Is there a charge for top-ups?
+      - If I add money with an international card, are there any fees?
+      - Are there fees for adding money with an International card?
+      - Are there any fees if I want to add money using an international card?
+      - Is there a fee for adding funds with a credit card?
+      - I want to add money to my international card, so are there any fees charged to do this?
+  - intent: activate_my_card
+    examples: |
+      - Can someone assist me with activating my card?
+      - Do I need a photo ID to activate a my new card?
+      - Can I have my card activated?
+      - Can I get some help activating my new card?
+      - Is my card activated?
+      - Can I call to get my card activated?
+      - Can I get some help to get me card activated?
+      - Can I activate my card?
+      - I need assistance activating my card?
+      - Can I activate my card with the app?
+      - can you assist me in activating my card?
+      - Who do I call to activate my new card?
+      - Can someone assist me with activating my new card?
+      - I can't activate my card?
+      - Can I use my new card?
+      - Is my new card activated?
+  - intent: cash_withdrawal_charge
+    examples: |
+      - Is there an extra fee for using an ATM?
+      - Hello, I have a question concerning an unfamiliar fee that I notice on my account. I see that you guys charge for ATM withdrawal. Never notice this fee until now. Can you please explain?
+      - Is the fee with my cash withdrawal a mistake?
+      - Do you charge for making a withdrawal? I took some money out of my account earlier and I was charged for this.
+      - Is there a cash withdrawal fee? Because I just got charged?
+      - Hello, I wanted to get some more information about ATM Withdraw Fee. I have been withdrawing money for years and notice this charge on my account. I always thought it was no fee since its you guys ATM company that I am withdrawing. Can you please explain?
+      - This is not right, I was told I could take out cash at the ATM for free?
+      - Is there a reason I was charged an extra fee for using the ATM?
+      - Is there a fee for a cash withdrawal?
+      - I received a fee for obtaining cash, is this correct?
+      - Today I noticed a charge for an ATM withdrawal on my account. Can you please fix this? It's supposed to be no charge.
+      - Is there a charge for cash withdrawals? I always thought it was free.
+      - Are there ATM fees?
+      - I made a cash withdrawal and was charged a fee incorrectly can you help with this?
+      - I saw a fee on my receipt from withdrawing money while shopping earlier.  Is there supposed to be a fee for this type of transaction?
+      - I believe i was charged for making a withdrawal after i went grocery shopping. Are you guys charging for this now?
+      - is there a charge on withdrawals?
+      - Are there charges for cash withdrawals?
+      - Do I get charged for withdrawals?
+      - Is there a charge for getting cash?
+      - Hello, I have noticed a problem on my recent withdrawal at the banks atm machine.  I made a transaction and upon receiving my funds from the machine, a fee was assessed to my withdrawal.  Are these types of transactions free of charge?
+      - Do cash withdrawals cost anything?
+  - intent: card_about_to_expire
+    examples: |
+      - Are there any express fees if i want my new card faster?
+      - Do I need to do something to get a new card once it expires?
+      - I am overseas in China, can I get a replacement card?
+      - Can I get a new card with new expiration date in China?
+      - Are there restrictions on new cards in China?
+      - Is it possible to get a new card in China?
+      - Does it cost much or take long to get a new card? Mine is about to expire.
+      - Are there steps I need to take before my card expires?
+      - My card will expire soon, do I need to order a new one?
+      - Can I order a new card to China?
+      - Is ordering a new card from China available?
+      - Is there a way to order a new card while in China?
+      - Do I need to order a new card if mine is expiring?
+      - Am I able to get this shipped to China?
+      - Can I order a new card by phone?
+      - Can I get a new card in China?
+      - Can I order a new card with the app?
+      - Do I need to order a new card before it expires?
+      - I have a card that expires in the coming month, do I have to specifically ask for the updated card?
+      - If my card is going to expire this month, do I need to order a new one?
+      - Can I order a new card?  Mine is about to expire.
+      - Can I keep using my card after it expires?
+      - Are new cards available from China?
+      - My card is about to expire. Do I have to go to a branch to order a new card?
+      - Can I have a new card shipped to China?
+      - Can I get a new card even though I am in China?
+  - intent: apple_pay_or_google_pay
+    examples: |
+      - Can I use google pay to top up?
+      - Can I deposit money using Apple Pay?
+      - I do I top up from my Apple Watch?
+      - I need to top up, can I use google pay?
+      - Can I use my American Express card with Apple Pay?
+      - Can I use my apple watch to top-up?
+      - Is top-up possible with Apple Pay?
+      - Can I top up with Google Pay?
+      - Can I add funds directly from my Apple Watch?
+      - I am having a slight problem with my American express in apple play, can you help me fix the problem with top up?
+      - In regards to top-ups, can I do them via Google Pay?
+      - Can I use top-up with Apple pay?
+      - I want to top up from my Apple Watch, can I?
+      - Can I use the apple watch to make a top-up?
+      - Can I top-up via Apple Pay?
+      - Can I top up using my apple watch?
+      - Can I use Apple Pay to top-up?
+      - I seem to be having trouble with my Google Pay Top. Can you please help?
+      - Does Google Pay offer a top up option?
+      - is apple pay a top up service?
+      - I want to top up my account. Can I do it with Google Pay?
+      - Can I use my apple watch to top up?
+      - Can I use my Apple Watch to pay for gas?
+      - Are top-ups allowed using Apple Pay?
+      - Is topping up with Apple Pay possible?
+      - Using Google Pay, can I top up?
+      - Does my top up and apple pay work together?
+      - I have received my American express in apple play, looks like top up has an issue, please help?
+      - Is it possible for me to top up with Google Pay?
+      - Can apple pay handle top up exchanges?
+      - Does google play offer the service to Top up?
+      - Can I top-up my google pay?
+      - Can I top up my account with Google Pay?
+      - Is there a way to top up using my Apple Watch?
+      - I can't get my Google Pay Top to work. Are there any issues on your end?
+      - can I top up an apple pay?
+      - Am I able to do top-ups with Google Pay?
+      - Can you help me get Top Up to work in the Apple Pay function?
+      - Can an apple watch be used to tup-up?
+      - Can I use my Apple watch to fill my gas tank?
+      - top up google pay, is it possible?
+      - I can't see my Google Pay top up. Is it not working correctly?
+      - Is it possible to top up with Google Pay?
+      - Can you assist on apple watch top ups?
+      - Apple pay is not accepting my American Express card, can you assist me with this problem?
+      - Can you please assist me in Apple Pay, in getting Top Up to work?
+      - Can I use google play as my primary app to Top up?
+      - Does Apple Watch support the topping-off of my account?
+      - I'm trying to use my Apple Watch to top up my google pay. Do I need a special app?
+      - Can I pay for my gas using my Apple watch?
+      - Can Google Pay be used for top up, please help?
+      - Is it possible to use my apple watch for topping up?
+  - intent: verify_my_identity
+    examples: |
+      - If I don't have all my documents can they still verify my identity?
+      - Do I need any kind of proof for the identity check?
+      - Can I get a full list of instructions for identity checks?
+      - Can I use my social security card as a form of identity?
+      - Can I verify my identity?
+      - For the identity check, do I need any kind of documentation?
+      - Can I get information on the identity checks?
+  - intent: country_support
+    examples: |
+      - Are these cards available in europe?
+      - Can I get a card in the EU?
+      - Can I use my card in Austria?
+      - Do you have to be in the UK to get a card?
+      - Can I use this all over the world?
+      - Do you provide cards to people not in the UK?
+      - Can the card be mailed to Europe?
+      - i live in portugal. do you operate here?
+      - I live in the EU - can I get a card?
+      - Can you tell me the countries you operate in?
+      - May I get one of your cards?  I live in the EU.
+      - can i get a card if I live in the usa?
+      - Is this open to residents of all countries?
+      - Is it possible to get one of your cards in the European Union?
+      - Are you located in other countries?
+      - Although I am not located in the UK area, may i still receive a card?
+      - can usa residents get a card?
+      - Is it possible for a person who lives in the US to get a card?
+      - Are your cards supported in the EU?
+      - Are cards issued to people living in the US?
+      - I would like to know the countries you are offer services in?
+      - Can I get a card in the US?
+      - Can I get support?
+      - I don't live in the UK. Can I still get a card?
+      - Can I use it outside of Europe?
+      - Can I apply for one of your cards if I live in the EU?
+      - can i get a card if i live in the US?
+      - Are cards available to those outside of the UK?
+      - Do you do business in the EU?
+      - Is it possible to get a card outside the UK?
+      - Can I get a card if I don't reside in the UK?
+      - If I don't live in the UK, can I get a card?
+      - can I use it in any country?
+      - Can I get a card? I live in the US.
+      - I would like to get your card in EU. Is that possible?
+      - Do you offer cards for those in other countries?
+      - are there any country restrictions?
+      - I live in the EU.  Can I order one of your cards?
+      - Can I get a card that works in other countries like Africa and Indonesia?
+      - Are you available in my country?
+      - Are you only able to get a card if you're in the UK?
+      - Do you issue cards for someone living in the US?
+      - Is this card available to Americans?
+      - If I don't live in the UK, can I still get a card?
+      - I'm not in the UK, but can I still get a card?
+      - Can someone in the US have a card?
+      - Can I have a card even if I am not living in the UK?
+      - Do you support countries other than mine?
+      - Do you support all countries?
+      - I live in the EU, can I get one of your cards?
+      - Can an American resident apply to get a card?
+      - I am in the EU. Can I get one of your cards?
+      - I live in the UK. Can I get a card?
+      - I am not in the UK can i get a card?
+      - Is it possible to get one the your cards in the EU?
+      - I want a card, but I'm not in the UK- can I get one still?
+      - Are your cards available in the EU?
+      - I'm in the EU. Can I get one of your cards?
+      - Is this card available to United States Residents?
+      - can I use it all over the world?
+      - Do you work in Greece?
+      - Are cards available in the EU?

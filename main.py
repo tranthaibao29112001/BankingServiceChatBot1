@@ -61,7 +61,7 @@ class Converter(object):
             intent_texts = df[
                 df[self.intent_column] == intent][self.text_column].tolist()
 
-            intent_texts = filter(lambda x: x.find("What") == -1 and x.find("How"), intent_texts)
+            intent_texts = filter(lambda x: (x.lower().find("are") != -1 or x.lower().find("do") != -1 or x.lower().find("can") != -1 or x.lower().find("is") != -1 or x.lower().find("may") != -1 ) and x.lower().find("what") == -1 and x.lower().find("how") == -1 and x.lower().find("why") == -1 and x.lower().find("when") == -1 and x.lower().find("where") == -1 and x.lower().find("which") == -1 and x.lower().find("?") != -1, intent_texts)
             # Workaround that allows for injection of scalar literal '|'
             intent_texts_str = ''
             for text in intent_texts:
@@ -135,4 +135,4 @@ def convert(file_path: str,
 
 
 if __name__ == '__main__':
-    convert('C:\\Users\\DELL\\Desktop\\train.csv', 'intent', 'text', 'examples', '3.0', '.', 'nlu_other.yml', False)
+    convert('C:\\Users\\DELL\\Desktop\\train.csv', 'intent', 'text', 'examples', '3.0', '.', 'nlu_count_how.yml', False)
